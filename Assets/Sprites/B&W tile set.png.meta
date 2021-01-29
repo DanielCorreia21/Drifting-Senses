@@ -1,0 +1,3488 @@
+fileFormatVersion: 2
+guid: d9709c7033553f04bbf3e5c4116d2305
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4992439931236290
+    second: B&W tile set_0
+  - first:
+      213: -1723452051113704809
+    second: B&W tile set_1
+  - first:
+      213: -8994609460356313470
+    second: B&W tile set_2
+  - first:
+      213: 1823574491567818087
+    second: B&W tile set_3
+  - first:
+      213: 6908903585352957455
+    second: B&W tile set_4
+  - first:
+      213: -284016424704889802
+    second: B&W tile set_5
+  - first:
+      213: 6117924322333280351
+    second: B&W tile set_6
+  - first:
+      213: 8663202442815536135
+    second: B&W tile set_7
+  - first:
+      213: 5250798270653365824
+    second: B&W tile set_8
+  - first:
+      213: 5994080022302165503
+    second: B&W tile set_9
+  - first:
+      213: -4019687279507707381
+    second: B&W tile set_10
+  - first:
+      213: 2094026511919060172
+    second: B&W tile set_11
+  - first:
+      213: 8373055618654646112
+    second: B&W tile set_12
+  - first:
+      213: -645126692413732682
+    second: B&W tile set_13
+  - first:
+      213: -8785992525841112014
+    second: B&W tile set_14
+  - first:
+      213: 1744585354978643484
+    second: B&W tile set_15
+  - first:
+      213: 8459824713013293138
+    second: B&W tile set_16
+  - first:
+      213: 4284614125976467513
+    second: B&W tile set_17
+  - first:
+      213: -3653946541945552104
+    second: B&W tile set_18
+  - first:
+      213: -3176962225170064327
+    second: B&W tile set_19
+  - first:
+      213: -3774799179887344335
+    second: B&W tile set_20
+  - first:
+      213: 5727473178364544525
+    second: B&W tile set_21
+  - first:
+      213: 3664835617483560052
+    second: B&W tile set_22
+  - first:
+      213: 8053500480863777488
+    second: B&W tile set_23
+  - first:
+      213: -2248126841562329601
+    second: B&W tile set_24
+  - first:
+      213: -3688943910991557428
+    second: B&W tile set_25
+  - first:
+      213: 7045414634587805397
+    second: B&W tile set_26
+  - first:
+      213: -5139212037986057503
+    second: B&W tile set_27
+  - first:
+      213: -3613335911041678552
+    second: B&W tile set_28
+  - first:
+      213: -2952117269794120202
+    second: B&W tile set_29
+  - first:
+      213: -5966841584767575092
+    second: B&W tile set_30
+  - first:
+      213: 665329211442232635
+    second: B&W tile set_31
+  - first:
+      213: -5424953891924970566
+    second: B&W tile set_32
+  - first:
+      213: -7338611765196972607
+    second: B&W tile set_33
+  - first:
+      213: 5567436451131697448
+    second: B&W tile set_34
+  - first:
+      213: 5217374029505069876
+    second: B&W tile set_35
+  - first:
+      213: 117643979441082058
+    second: B&W tile set_36
+  - first:
+      213: 7534945193742549497
+    second: B&W tile set_37
+  - first:
+      213: 571769555867817873
+    second: B&W tile set_38
+  - first:
+      213: 2988609659456445026
+    second: B&W tile set_39
+  - first:
+      213: 8579202912498076918
+    second: B&W tile set_40
+  - first:
+      213: 6195133342255044325
+    second: B&W tile set_41
+  - first:
+      213: -3762469812134107483
+    second: B&W tile set_42
+  - first:
+      213: 6423670557134753832
+    second: B&W tile set_43
+  - first:
+      213: -5413004330052875196
+    second: B&W tile set_44
+  - first:
+      213: -7910534238071347041
+    second: B&W tile set_45
+  - first:
+      213: 529449119582750892
+    second: B&W tile set_46
+  - first:
+      213: -1476650279552594521
+    second: B&W tile set_47
+  - first:
+      213: 8072170953715902306
+    second: B&W tile set_48
+  - first:
+      213: 8162868486037173995
+    second: B&W tile set_49
+  - first:
+      213: -2470911400338093805
+    second: B&W tile set_50
+  - first:
+      213: 8161926894154469607
+    second: B&W tile set_51
+  - first:
+      213: 3803080704860830363
+    second: B&W tile set_52
+  - first:
+      213: 4213330732209885694
+    second: B&W tile set_53
+  - first:
+      213: -5136340026296800529
+    second: B&W tile set_54
+  - first:
+      213: 1188616375332633264
+    second: B&W tile set_55
+  - first:
+      213: 5436273943703859003
+    second: B&W tile set_56
+  - first:
+      213: -3126116859664560313
+    second: B&W tile set_57
+  - first:
+      213: 2329836167428698139
+    second: B&W tile set_58
+  - first:
+      213: 7843401799283975928
+    second: B&W tile set_59
+  - first:
+      213: 6524612594014016571
+    second: B&W tile set_60
+  - first:
+      213: -6471230192175644150
+    second: B&W tile set_61
+  - first:
+      213: 1137903348740431270
+    second: B&W tile set_62
+  - first:
+      213: 3826189365200758094
+    second: B&W tile set_63
+  - first:
+      213: -2878148473054274909
+    second: B&W tile set_64
+  - first:
+      213: 831692236634628756
+    second: B&W tile set_65
+  - first:
+      213: 5106822926321555773
+    second: B&W tile set_66
+  - first:
+      213: 2110549851145787520
+    second: B&W tile set_67
+  - first:
+      213: 5188380292042924307
+    second: B&W tile set_68
+  - first:
+      213: 7349962548276058664
+    second: B&W tile set_69
+  - first:
+      213: 2991307319159471307
+    second: B&W tile set_70
+  - first:
+      213: 5302305785507058484
+    second: B&W tile set_71
+  - first:
+      213: -1783887983018988581
+    second: B&W tile set_72
+  - first:
+      213: 5656252491908111255
+    second: B&W tile set_73
+  - first:
+      213: -2439703306458605379
+    second: B&W tile set_74
+  - first:
+      213: 7528178866667099351
+    second: B&W tile set_75
+  - first:
+      213: -7557852472721177282
+    second: B&W tile set_76
+  - first:
+      213: -5932609584542685500
+    second: B&W tile set_77
+  - first:
+      213: 6704904438763972877
+    second: B&W tile set_78
+  - first:
+      213: 3075570803567129527
+    second: B&W tile set_79
+  - first:
+      213: 8761939486506007711
+    second: B&W tile set_80
+  - first:
+      213: 5057898235680514825
+    second: B&W tile set_81
+  - first:
+      213: 5414728618932742659
+    second: B&W tile set_82
+  - first:
+      213: -3760678558698671965
+    second: B&W tile set_83
+  - first:
+      213: 1311370784002395157
+    second: B&W tile set_84
+  - first:
+      213: -4746492743896752334
+    second: B&W tile set_85
+  - first:
+      213: -6234325869476278684
+    second: B&W tile set_86
+  - first:
+      213: 984054855510631104
+    second: B&W tile set_87
+  - first:
+      213: -1827468297653515219
+    second: B&W tile set_88
+  - first:
+      213: -3872729820928438243
+    second: B&W tile set_89
+  - first:
+      213: -653157103642721938
+    second: B&W tile set_90
+  - first:
+      213: 3179475647934410131
+    second: B&W tile set_91
+  - first:
+      213: -1157935702101681664
+    second: B&W tile set_92
+  - first:
+      213: 4398858738792997744
+    second: B&W tile set_93
+  - first:
+      213: -3134048905304938272
+    second: B&W tile set_94
+  - first:
+      213: -4728034066240199868
+    second: B&W tile set_95
+  - first:
+      213: -7616232285173250068
+    second: B&W tile set_96
+  - first:
+      213: -1980535429782336920
+    second: B&W tile set_97
+  - first:
+      213: 3049986825572175708
+    second: B&W tile set_98
+  - first:
+      213: 3606337326822898915
+    second: B&W tile set_99
+  - first:
+      213: -2117026548536947269
+    second: B&W tile set_100
+  - first:
+      213: 2206769404167987522
+    second: B&W tile set_101
+  - first:
+      213: -4709253578247751088
+    second: B&W tile set_102
+  - first:
+      213: 8754750684182022807
+    second: B&W tile set_103
+  - first:
+      213: 1905324005260464458
+    second: B&W tile set_104
+  - first:
+      213: 7731585533987956991
+    second: B&W tile set_105
+  - first:
+      213: -5925390381318908138
+    second: B&W tile set_106
+  - first:
+      213: -4948861662176508241
+    second: B&W tile set_107
+  - first:
+      213: -7306073542039766773
+    second: B&W tile set_108
+  - first:
+      213: 6890335088082028578
+    second: B&W tile set_109
+  - first:
+      213: 2895638141680663897
+    second: B&W tile set_110
+  - first:
+      213: -447717530815281988
+    second: B&W tile set_111
+  - first:
+      213: -5669644625165917321
+    second: B&W tile set_112
+  - first:
+      213: -5443695791170174852
+    second: B&W tile set_113
+  - first:
+      213: -5884098228833723700
+    second: B&W tile set_114
+  - first:
+      213: -1172245688901979556
+    second: B&W tile set_115
+  - first:
+      213: -7169363141672119529
+    second: B&W tile set_116
+  - first:
+      213: 4324292706345079747
+    second: B&W tile set_117
+  - first:
+      213: 4427830166455874885
+    second: B&W tile set_118
+  - first:
+      213: 2991891696274060101
+    second: B&W tile set_119
+  - first:
+      213: -3683382863212749429
+    second: B&W tile set_120
+  - first:
+      213: 4501835494692563105
+    second: B&W tile set_121
+  - first:
+      213: 7491677546050719547
+    second: B&W tile set_122
+  - first:
+      213: 1314856870224572382
+    second: B&W tile set_123
+  - first:
+      213: -553699948770571935
+    second: B&W tile set_124
+  - first:
+      213: 6798492998824028135
+    second: B&W tile set_125
+  - first:
+      213: 3101152978822802655
+    second: B&W tile set_126
+  - first:
+      213: 7940627918842644213
+    second: B&W tile set_127
+  - first:
+      213: -8474200426450342574
+    second: B&W tile set_128
+  - first:
+      213: -5700186289259404653
+    second: B&W tile set_129
+  - first:
+      213: 1139281023536319564
+    second: B&W tile set_130
+  - first:
+      213: 2750325851928733192
+    second: B&W tile set_131
+  - first:
+      213: -1252969878688209583
+    second: B&W tile set_132
+  - first:
+      213: -265129803478215248
+    second: B&W tile set_133
+  - first:
+      213: 7919474490449870202
+    second: B&W tile set_134
+  - first:
+      213: 1914222131491396052
+    second: B&W tile set_135
+  - first:
+      213: 2663495155855076472
+    second: B&W tile set_136
+  - first:
+      213: -8089450397767581028
+    second: B&W tile set_137
+  - first:
+      213: -539152417760054773
+    second: B&W tile set_138
+  - first:
+      213: -8721347461814366291
+    second: B&W tile set_139
+  - first:
+      213: -8597507699580452636
+    second: B&W tile set_140
+  - first:
+      213: -8736586912468464010
+    second: B&W tile set_141
+  - first:
+      213: -7397531373858808174
+    second: B&W tile set_142
+  - first:
+      213: 892320401879277677
+    second: B&W tile set_143
+  - first:
+      213: -2584547774206419801
+    second: B&W tile set_144
+  - first:
+      213: 5973014134822679607
+    second: B&W tile set_145
+  - first:
+      213: 2713388111600951434
+    second: B&W tile set_146
+  - first:
+      213: 4528394164867058603
+    second: B&W tile set_147
+  - first:
+      213: 6614899048459753544
+    second: B&W tile set_148
+  - first:
+      213: -7881391842406380567
+    second: B&W tile set_149
+  - first:
+      213: 1884837341583773522
+    second: B&W tile set_150
+  - first:
+      213: -4062855219055661819
+    second: B&W tile set_151
+  - first:
+      213: -3134513763803172338
+    second: B&W tile set_152
+  - first:
+      213: -4302534388602515428
+    second: B&W tile set_153
+  - first:
+      213: 6560377921409796766
+    second: B&W tile set_154
+  - first:
+      213: 5417404925504866701
+    second: B&W tile set_155
+  - first:
+      213: -5679788934113654853
+    second: B&W tile set_156
+  - first:
+      213: -5163213191783915011
+    second: B&W tile set_157
+  - first:
+      213: 7771004312990231593
+    second: B&W tile set_158
+  - first:
+      213: 4587406334044813354
+    second: B&W tile set_159
+  - first:
+      213: -6576441987805625218
+    second: B&W tile set_160
+  - first:
+      213: -2017998849217791826
+    second: B&W tile set_161
+  - first:
+      213: -3478933452444483565
+    second: B&W tile set_162
+  - first:
+      213: 1833552393556537995
+    second: B&W tile set_163
+  - first:
+      213: 5907354404972663990
+    second: B&W tile set_164
+  - first:
+      213: 5622313943987280182
+    second: B&W tile set_165
+  - first:
+      213: -3342271523363261524
+    second: B&W tile set_166
+  - first:
+      213: -1472473204047018423
+    second: B&W tile set_167
+  - first:
+      213: -7025584165733939525
+    second: B&W tile set_168
+  - first:
+      213: -4343507241576758741
+    second: B&W tile set_169
+  - first:
+      213: -9017568674380931005
+    second: B&W tile set_170
+  - first:
+      213: -6418556360788983336
+    second: B&W tile set_171
+  - first:
+      213: -1404111714669074978
+    second: B&W tile set_172
+  - first:
+      213: -817598135701991361
+    second: B&W tile set_173
+  - first:
+      213: -3447752236555596641
+    second: B&W tile set_174
+  - first:
+      213: -1906522907865598133
+    second: B&W tile set_175
+  - first:
+      213: 4219244105385705897
+    second: B&W tile set_176
+  - first:
+      213: 2175970425551568967
+    second: B&W tile set_177
+  - first:
+      213: 8108696144350707589
+    second: B&W tile set_178
+  - first:
+      213: -1150597758673747251
+    second: B&W tile set_179
+  - first:
+      213: 6583751802817195029
+    second: B&W tile set_180
+  - first:
+      213: 4424550048883614984
+    second: B&W tile set_181
+  - first:
+      213: -7111927171865088895
+    second: B&W tile set_182
+  - first:
+      213: -2965974928275252430
+    second: B&W tile set_183
+  - first:
+      213: -7703551613449585610
+    second: B&W tile set_184
+  - first:
+      213: -7205900451121690481
+    second: B&W tile set_185
+  - first:
+      213: -3904288993396153238
+    second: B&W tile set_186
+  - first:
+      213: -7924893016113738363
+    second: B&W tile set_187
+  - first:
+      213: 4795257815147692228
+    second: B&W tile set_188
+  - first:
+      213: -7174508009522506740
+    second: B&W tile set_189
+  - first:
+      213: -151910503938607614
+    second: B&W tile set_190
+  - first:
+      213: 3405113239832720110
+    second: B&W tile set_191
+  - first:
+      213: -2971469563664756792
+    second: B&W tile set_192
+  - first:
+      213: -450582943443249888
+    second: B&W tile set_193
+  - first:
+      213: -6571664004653713911
+    second: B&W tile set_194
+  - first:
+      213: -3641864671403969261
+    second: B&W tile set_195
+  - first:
+      213: 8447706801353962625
+    second: B&W tile set_196
+  - first:
+      213: 6131128130886279646
+    second: B&W tile set_197
+  - first:
+      213: 6149343607875814604
+    second: B&W tile set_198
+  - first:
+      213: -4928176647618041876
+    second: B&W tile set_199
+  - first:
+      213: -3211680682425177614
+    second: B&W tile set_200
+  - first:
+      213: 8815065052514896556
+    second: B&W tile set_201
+  - first:
+      213: 7067911049322822263
+    second: B&W tile set_202
+  - first:
+      213: -3315142642335132988
+    second: B&W tile set_203
+  - first:
+      213: 3018848561261340228
+    second: B&W tile set_204
+  - first:
+      213: -2060133588352159750
+    second: B&W tile set_205
+  - first:
+      213: 2962934485002368162
+    second: B&W tile set_206
+  - first:
+      213: -6121512979731532259
+    second: B&W tile set_207
+  - first:
+      213: -701062634166686036
+    second: B&W tile set_208
+  - first:
+      213: -4959274279717134846
+    second: B&W tile set_209
+  - first:
+      213: 7372354797464818345
+    second: B&W tile set_210
+  - first:
+      213: -6389285452378238120
+    second: B&W tile set_211
+  - first:
+      213: -9128718798060907777
+    second: B&W tile set_212
+  - first:
+      213: 5071263947391754835
+    second: B&W tile set_213
+  - first:
+      213: 4716920696986028924
+    second: B&W tile set_214
+  - first:
+      213: 7273492754007261715
+    second: B&W tile set_215
+  - first:
+      213: -5296789648731733433
+    second: B&W tile set_216
+  - first:
+      213: -4920866187281078932
+    second: B&W tile set_217
+  - first:
+      213: 6683317617633642123
+    second: B&W tile set_218
+  - first:
+      213: 7110391524639707502
+    second: B&W tile set_219
+  - first:
+      213: 1478892311028519119
+    second: B&W tile set_220
+  - first:
+      213: -4210327233115015096
+    second: B&W tile set_221
+  - first:
+      213: -4845492579218102003
+    second: B&W tile set_222
+  - first:
+      213: 7618198843756807909
+    second: B&W tile set_223
+  - first:
+      213: -7002359676611589441
+    second: B&W tile set_224
+  - first:
+      213: 4070568827974212388
+    second: B&W tile set_225
+  - first:
+      213: 2657800904180207346
+    second: B&W tile set_226
+  - first:
+      213: -2119208245890859919
+    second: B&W tile set_227
+  - first:
+      213: -708586581250491696
+    second: B&W tile set_228
+  - first:
+      213: -79824288324867457
+    second: B&W tile set_229
+  - first:
+      213: -7889749840811699092
+    second: B&W tile set_230
+  - first:
+      213: 2872287752224845476
+    second: B&W tile set_231
+  - first:
+      213: -184151905980760524
+    second: B&W tile set_232
+  - first:
+      213: -6980758381899827915
+    second: B&W tile set_233
+  - first:
+      213: 7515333534927413064
+    second: B&W tile set_234
+  - first:
+      213: 394932924507714496
+    second: B&W tile set_235
+  - first:
+      213: 1955017193120361292
+    second: B&W tile set_236
+  - first:
+      213: -8051316643908045959
+    second: B&W tile set_237
+  - first:
+      213: -1205266456149554981
+    second: B&W tile set_238
+  - first:
+      213: -6505303108209763014
+    second: B&W tile set_239
+  - first:
+      213: -5163772431441734712
+    second: B&W tile set_240
+  - first:
+      213: 7332535988691248421
+    second: B&W tile set_241
+  - first:
+      213: -2863358618436878524
+    second: B&W tile set_242
+  - first:
+      213: 1964131487715511109
+    second: B&W tile set_243
+  - first:
+      213: -1546040330882962854
+    second: B&W tile set_244
+  - first:
+      213: 8894756209004771780
+    second: B&W tile set_245
+  - first:
+      213: 135687747149711498
+    second: B&W tile set_246
+  - first:
+      213: -3587032597979687023
+    second: B&W tile set_247
+  - first:
+      213: -1768313137180836451
+    second: B&W tile set_248
+  - first:
+      213: 4485271275605770812
+    second: B&W tile set_249
+  - first:
+      213: -7567399138376668207
+    second: B&W tile set_250
+  - first:
+      213: 149045091875836017
+    second: B&W tile set_251
+  - first:
+      213: 2242129687858839911
+    second: B&W tile set_252
+  - first:
+      213: -1055059217229233769
+    second: B&W tile set_253
+  - first:
+      213: 1043902134987076832
+    second: B&W tile set_254
+  - first:
+      213: -6654573349328600162
+    second: B&W tile set_255
+  - first:
+      213: 2861871673046111262
+    second: B&W tile set_256
+  - first:
+      213: -7165487163600552180
+    second: B&W tile set_257
+  - first:
+      213: -3696744534070560103
+    second: B&W tile set_258
+  - first:
+      213: 9148907783582871990
+    second: B&W tile set_259
+  - first:
+      213: -4534575839229690991
+    second: B&W tile set_260
+  - first:
+      213: -6103630890509078215
+    second: B&W tile set_261
+  - first:
+      213: 6593321113346552669
+    second: B&W tile set_262
+  - first:
+      213: 8656061972775219903
+    second: B&W tile set_263
+  - first:
+      213: 2205740082909137735
+    second: B&W tile set_264
+  - first:
+      213: 7751086583828150053
+    second: B&W tile set_265
+  - first:
+      213: 2674548652091980778
+    second: B&W tile set_266
+  - first:
+      213: -1506841253854371242
+    second: B&W tile set_267
+  - first:
+      213: 8709707475158431880
+    second: B&W tile set_268
+  - first:
+      213: -3662647955942060224
+    second: B&W tile set_269
+  - first:
+      213: 7423865832505054895
+    second: B&W tile set_270
+  - first:
+      213: 132312101091621164
+    second: B&W tile set_271
+  - first:
+      213: 4993814427131457686
+    second: B&W tile set_272
+  - first:
+      213: 4717779957361086333
+    second: B&W tile set_273
+  - first:
+      213: 6353068818450956536
+    second: B&W tile set_274
+  - first:
+      213: -8879313667740754663
+    second: B&W tile set_275
+  - first:
+      213: 2823870089792092783
+    second: B&W tile set_276
+  - first:
+      213: -4464027187146930312
+    second: B&W tile set_277
+  - first:
+      213: -4457494641290032582
+    second: B&W tile set_278
+  - first:
+      213: -4895994037760241269
+    second: B&W tile set_279
+  - first:
+      213: 1181950744133178303
+    second: B&W tile set_280
+  - first:
+      213: -3822660429308332730
+    second: B&W tile set_281
+  - first:
+      213: 541160262161630578
+    second: B&W tile set_282
+  - first:
+      213: 7733891411249024069
+    second: B&W tile set_283
+  - first:
+      213: 8795336096393678627
+    second: B&W tile set_284
+  - first:
+      213: 3083011200821306972
+    second: B&W tile set_285
+  - first:
+      213: 8525509993088750341
+    second: B&W tile set_286
+  - first:
+      213: 883608986818448906
+    second: B&W tile set_287
+  - first:
+      213: -2920957974219924158
+    second: B&W tile set_288
+  - first:
+      213: -7186971907285944410
+    second: B&W tile set_289
+  - first:
+      213: -3292161804126450688
+    second: B&W tile set_290
+  - first:
+      213: -1016547775046217888
+    second: B&W tile set_291
+  - first:
+      213: -1761406012425527065
+    second: B&W tile set_292
+  - first:
+      213: 4538464330957464043
+    second: B&W tile set_293
+  - first:
+      213: -2732427849209857310
+    second: B&W tile set_294
+  - first:
+      213: -1316451694340642578
+    second: B&W tile set_295
+  - first:
+      213: -7198260243188238755
+    second: B&W tile set_296
+  - first:
+      213: 793722208003856268
+    second: B&W tile set_297
+  - first:
+      213: 3607552492110122975
+    second: B&W tile set_298
+  - first:
+      213: -95112140190929701
+    second: B&W tile set_299
+  - first:
+      213: 1404920292730279952
+    second: B&W tile set_300
+  - first:
+      213: -2366238810565321839
+    second: B&W tile set_301
+  - first:
+      213: -2601050305044964060
+    second: B&W tile set_302
+  - first:
+      213: 7273421681645875168
+    second: B&W tile set_303
+  - first:
+      213: -2234758805650410418
+    second: B&W tile set_304
+  - first:
+      213: -9202267426861845618
+    second: B&W tile set_305
+  - first:
+      213: 4425297206847985639
+    second: B&W tile set_306
+  - first:
+      213: -2996095770579595723
+    second: B&W tile set_307
+  - first:
+      213: -3802288033731389373
+    second: B&W tile set_308
+  - first:
+      213: -4830413331240967766
+    second: B&W tile set_309
+  - first:
+      213: -4202677893321895415
+    second: B&W tile set_310
+  - first:
+      213: -4073293277100874862
+    second: B&W tile set_311
+  - first:
+      213: 9091391220881433939
+    second: B&W tile set_312
+  - first:
+      213: 8233517492309927405
+    second: B&W tile set_313
+  - first:
+      213: 8196101250082238726
+    second: B&W tile set_314
+  - first:
+      213: -8913345001986963346
+    second: B&W tile set_315
+  - first:
+      213: 4334153331272868098
+    second: B&W tile set_316
+  - first:
+      213: -512428721324561433
+    second: B&W tile set_317
+  - first:
+      213: 4665322844393585246
+    second: B&W tile set_318
+  - first:
+      213: -6785884254412716657
+    second: B&W tile set_319
+  - first:
+      213: 7548474010169991658
+    second: B&W tile set_320
+  - first:
+      213: 790447255950730504
+    second: B&W tile set_321
+  - first:
+      213: 1369237074975111001
+    second: B&W tile set_322
+  - first:
+      213: 5498916668884930897
+    second: B&W tile set_323
+  - first:
+      213: 7384110351338719472
+    second: B&W tile set_324
+  - first:
+      213: -1797022078695191695
+    second: B&W tile set_325
+  - first:
+      213: -1343044376859480800
+    second: B&W tile set_326
+  - first:
+      213: 4302302057630609044
+    second: B&W tile set_327
+  - first:
+      213: 6166836138260323035
+    second: B&W tile set_328
+  - first:
+      213: -7209820029973654727
+    second: B&W tile set_329
+  - first:
+      213: -1548262765799093791
+    second: B&W tile set_330
+  - first:
+      213: -8278336609741479441
+    second: B&W tile set_331
+  - first:
+      213: -7252896273045191997
+    second: B&W tile set_332
+  - first:
+      213: -1130082391262046458
+    second: B&W tile set_333
+  - first:
+      213: -717372234025208878
+    second: B&W tile set_334
+  - first:
+      213: 5980734007215951487
+    second: B&W tile set_335
+  - first:
+      213: 992750282999547838
+    second: B&W tile set_336
+  - first:
+      213: -7468348893857206785
+    second: B&W tile set_337
+  - first:
+      213: -9069391532096328419
+    second: B&W tile set_338
+  - first:
+      213: -6646252052299830192
+    second: B&W tile set_339
+  - first:
+      213: -406666108556172537
+    second: B&W tile set_340
+  - first:
+      213: -8783723619583531146
+    second: B&W tile set_341
+  - first:
+      213: -934603137860599499
+    second: B&W tile set_342
+  - first:
+      213: -4488365387317786697
+    second: B&W tile set_343
+  - first:
+      213: -5163764363615084868
+    second: B&W tile set_344
+  - first:
+      213: 6812168559217427903
+    second: B&W tile set_345
+  - first:
+      213: 3692027901241685227
+    second: B&W tile set_346
+  - first:
+      213: 4552777679550523026
+    second: B&W tile set_347
+  - first:
+      213: 8603940161615064037
+    second: B&W tile set_348
+  - first:
+      213: 4103936566458685410
+    second: B&W tile set_349
+  - first:
+      213: -4334037050462968636
+    second: B&W tile set_350
+  - first:
+      213: -530490863982590677
+    second: B&W tile set_351
+  - first:
+      213: 4451637213799142135
+    second: B&W tile set_352
+  - first:
+      213: -2132431743584045126
+    second: B&W tile set_353
+  - first:
+      213: -4233749328218830406
+    second: B&W tile set_354
+  - first:
+      213: -2019890762886108197
+    second: B&W tile set_355
+  - first:
+      213: -822594576653827207
+    second: B&W tile set_356
+  - first:
+      213: -4649084571457787221
+    second: B&W tile set_357
+  - first:
+      213: -5975450866545554608
+    second: B&W tile set_358
+  - first:
+      213: 3451218283446545599
+    second: B&W tile set_359
+  - first:
+      213: 3781818595975755906
+    second: B&W tile set_360
+  - first:
+      213: 310702839344771708
+    second: B&W tile set_361
+  - first:
+      213: 4030475614640462769
+    second: B&W tile set_362
+  - first:
+      213: 1895043205781313409
+    second: B&W tile set_363
+  - first:
+      213: 808788850621509742
+    second: B&W tile set_364
+  - first:
+      213: -8509017924965909412
+    second: B&W tile set_365
+  - first:
+      213: 1323225532774200149
+    second: B&W tile set_366
+  - first:
+      213: 6160032285904040150
+    second: B&W tile set_367
+  - first:
+      213: 7223099956994950599
+    second: B&W tile set_368
+  - first:
+      213: 4803704983815004426
+    second: B&W tile set_369
+  - first:
+      213: 7428517263165241053
+    second: B&W tile set_370
+  - first:
+      213: 6867293184346236362
+    second: B&W tile set_371
+  - first:
+      213: 2569930670955952645
+    second: B&W tile set_372
+  - first:
+      213: -5343747831964975505
+    second: B&W tile set_373
+  - first:
+      213: -700411747866214195
+    second: B&W tile set_374
+  - first:
+      213: 7144591838555108663
+    second: B&W tile set_375
+  - first:
+      213: 3314335646220464668
+    second: B&W tile set_376
+  - first:
+      213: 1562434482661960394
+    second: B&W tile set_377
+  - first:
+      213: -7942697600918053557
+    second: B&W tile set_378
+  - first:
+      213: 1158562901122343517
+    second: B&W tile set_379
+  - first:
+      213: 8858544600645106386
+    second: B&W tile set_380
+  - first:
+      213: 1506715458766987561
+    second: B&W tile set_381
+  - first:
+      213: 2603651515567607723
+    second: B&W tile set_382
+  - first:
+      213: -781242278244139567
+    second: B&W tile set_383
+  - first:
+      213: -129362810375204920
+    second: B&W tile set_384
+  - first:
+      213: 5095067392176088325
+    second: B&W tile set_385
+  - first:
+      213: 7228338727344636181
+    second: B&W tile set_386
+  - first:
+      213: -1902185843116792230
+    second: B&W tile set_387
+  - first:
+      213: -4820240600369941429
+    second: B&W tile set_388
+  - first:
+      213: -5430009552577037403
+    second: B&W tile set_389
+  - first:
+      213: 1308442185707532184
+    second: B&W tile set_390
+  - first:
+      213: -6531543724022189519
+    second: B&W tile set_391
+  - first:
+      213: -3760146033731365694
+    second: B&W tile set_392
+  - first:
+      213: 1864127810239061672
+    second: B&W tile set_393
+  - first:
+      213: 4353664822728830590
+    second: B&W tile set_394
+  - first:
+      213: -5692200668564436500
+    second: B&W tile set_395
+  - first:
+      213: 3743684612768041383
+    second: B&W tile set_396
+  - first:
+      213: -8852488343387793112
+    second: B&W tile set_397
+  - first:
+      213: 4125415135266468301
+    second: B&W tile set_398
+  - first:
+      213: -2766052099115468129
+    second: B&W tile set_399
+  - first:
+      213: -3222963425522472132
+    second: B&W tile set_400
+  - first:
+      213: 8051080978014256035
+    second: B&W tile set_401
+  - first:
+      213: 2635592893018011453
+    second: B&W tile set_402
+  - first:
+      213: 982265807689260442
+    second: B&W tile set_403
+  - first:
+      213: 1718891064243851543
+    second: B&W tile set_404
+  - first:
+      213: 3295204670717075926
+    second: B&W tile set_405
+  - first:
+      213: -2716349455296507748
+    second: B&W tile set_406
+  - first:
+      213: 3495893135670177979
+    second: B&W tile set_407
+  - first:
+      213: 2448657159777819705
+    second: B&W tile set_408
+  - first:
+      213: -2834766044402569396
+    second: B&W tile set_409
+  - first:
+      213: -6822851057543717536
+    second: B&W tile set_410
+  - first:
+      213: 1439123893325983860
+    second: B&W tile set_411
+  - first:
+      213: 798359654476939986
+    second: B&W tile set_412
+  - first:
+      213: -6791073701513715087
+    second: B&W tile set_413
+  - first:
+      213: -7964008543373511908
+    second: B&W tile set_414
+  - first:
+      213: -4121641251722652510
+    second: B&W tile set_415
+  - first:
+      213: 5115979988855821353
+    second: B&W tile set_416
+  - first:
+      213: 3475264703870856816
+    second: B&W tile set_417
+  - first:
+      213: 1105551984002268160
+    second: B&W tile set_418
+  - first:
+      213: 5996299697504445889
+    second: B&W tile set_419
+  - first:
+      213: -1526769601586300366
+    second: B&W tile set_420
+  - first:
+      213: 5050082911933014560
+    second: B&W tile set_421
+  - first:
+      213: -2568987645947833568
+    second: B&W tile set_422
+  - first:
+      213: -6360137806897882814
+    second: B&W tile set_423
+  - first:
+      213: -4875326403498135196
+    second: B&W tile set_424
+  - first:
+      213: -8551897897805108748
+    second: B&W tile set_425
+  - first:
+      213: -3737551145574842738
+    second: B&W tile set_426
+  - first:
+      213: 3313359648973754086
+    second: B&W tile set_427
+  - first:
+      213: -5442125314127685112
+    second: B&W tile set_428
+  - first:
+      213: 1361010134850961272
+    second: B&W tile set_429
+  - first:
+      213: -5021401778086359990
+    second: B&W tile set_430
+  - first:
+      213: 487337513105101916
+    second: B&W tile set_431
+  - first:
+      213: 2761453864856138932
+    second: B&W tile set_432
+  - first:
+      213: -8532907245735903856
+    second: B&W tile set_433
+  - first:
+      213: 5329951529581718252
+    second: B&W tile set_434
+  - first:
+      213: 3152244200571409732
+    second: B&W tile set_435
+  - first:
+      213: -3883198534796922188
+    second: B&W tile set_436
+  - first:
+      213: 4504184787400885886
+    second: B&W tile set_437
+  - first:
+      213: 2114099607116322937
+    second: B&W tile set_438
+  - first:
+      213: -346948462506765515
+    second: B&W tile set_439
+  - first:
+      213: 2127144728803453214
+    second: B&W tile set_440
+  - first:
+      213: 8324746987260752440
+    second: B&W tile set_441
+  - first:
+      213: 4137110948102725016
+    second: B&W tile set_442
+  - first:
+      213: -4358334610027653548
+    second: B&W tile set_443
+  - first:
+      213: 8149424670698842859
+    second: B&W tile set_444
+  - first:
+      213: 8466380287772471039
+    second: B&W tile set_445
+  - first:
+      213: -8417845012783395419
+    second: B&W tile set_446
+  - first:
+      213: -7215324991771143673
+    second: B&W tile set_447
+  - first:
+      213: 2193042631891322850
+    second: B&W tile set_448
+  - first:
+      213: -8868272137350688575
+    second: B&W tile set_449
+  - first:
+      213: -7657864316942188931
+    second: B&W tile set_450
+  - first:
+      213: -8443875505961531989
+    second: B&W tile set_451
+  - first:
+      213: -2696460384859059875
+    second: B&W tile set_452
+  - first:
+      213: -8404527268552644212
+    second: B&W tile set_453
+  - first:
+      213: -624215284181541454
+    second: B&W tile set_454
+  - first:
+      213: 7114139978279806892
+    second: B&W tile set_455
+  - first:
+      213: 2329779097099314978
+    second: B&W tile set_456
+  - first:
+      213: -7485651981022862755
+    second: B&W tile set_457
+  - first:
+      213: -3657751149378558135
+    second: B&W tile set_458
+  - first:
+      213: -496272713787411601
+    second: B&W tile set_459
+  - first:
+      213: -2406897674743877045
+    second: B&W tile set_460
+  - first:
+      213: -7401785078833660758
+    second: B&W tile set_461
+  - first:
+      213: -1391343715412275301
+    second: B&W tile set_462
+  - first:
+      213: 6968828549131109584
+    second: B&W tile set_463
+  - first:
+      213: -7955206140863732224
+    second: B&W tile set_464
+  - first:
+      213: 1396872728002352535
+    second: B&W tile set_465
+  - first:
+      213: -8262501309543640482
+    second: B&W tile set_466
+  - first:
+      213: -1210445111578088735
+    second: B&W tile set_467
+  - first:
+      213: 2710512173058705853
+    second: B&W tile set_468
+  - first:
+      213: 724936536344644730
+    second: B&W tile set_469
+  - first:
+      213: 7520012926378139892
+    second: B&W tile set_470
+  - first:
+      213: -8115393331616209925
+    second: B&W tile set_471
+  - first:
+      213: -9037162800491719025
+    second: B&W tile set_472
+  - first:
+      213: -2273344464862419811
+    second: B&W tile set_473
+  - first:
+      213: -2391219643193260971
+    second: B&W tile set_474
+  - first:
+      213: -6454464662640475712
+    second: B&W tile set_475
+  - first:
+      213: 5768201317509867686
+    second: B&W tile set_476
+  - first:
+      213: -4794957229290662833
+    second: B&W tile set_477
+  - first:
+      213: -4609751765293448018
+    second: B&W tile set_478
+  - first:
+      213: -3492904648142258279
+    second: B&W tile set_479
+  - first:
+      213: -4314421400358475151
+    second: B&W tile set_480
+  - first:
+      213: 5362788170715624927
+    second: B&W tile set_481
+  - first:
+      213: -5640586572889343570
+    second: B&W tile set_482
+  - first:
+      213: -2035379068721159874
+    second: B&W tile set_483
+  - first:
+      213: -1456397752224952898
+    second: B&W tile set_484
+  - first:
+      213: -2661244883110843303
+    second: B&W tile set_485
+  - first:
+      213: 617529954310033460
+    second: B&W tile set_486
+  - first:
+      213: -6450638177245949041
+    second: B&W tile set_487
+  - first:
+      213: 8458379629813222447
+    second: B&W tile set_488
+  - first:
+      213: 6929172404070248281
+    second: B&W tile set_489
+  - first:
+      213: -316569653265227973
+    second: B&W tile set_490
+  - first:
+      213: -5620845950929748347
+    second: B&W tile set_491
+  - first:
+      213: -4620594812946508273
+    second: B&W tile set_492
+  - first:
+      213: -2790962762061339799
+    second: B&W tile set_493
+  - first:
+      213: 3526003716218495687
+    second: B&W tile set_494
+  - first:
+      213: 5151123654778656307
+    second: B&W tile set_495
+  - first:
+      213: 6646493985062879717
+    second: B&W tile set_496
+  - first:
+      213: -5794601708675803050
+    second: B&W tile set_497
+  - first:
+      213: -4237704714382168064
+    second: B&W tile set_498
+  - first:
+      213: -3499324849936044062
+    second: B&W tile set_499
+  - first:
+      213: -8471425876791247391
+    second: B&W tile set_500
+  - first:
+      213: -3419078027476164381
+    second: B&W tile set_501
+  - first:
+      213: 3229214886734086617
+    second: B&W tile set_502
+  - first:
+      213: -7841703639484423618
+    second: B&W tile set_503
+  - first:
+      213: -866452795639715509
+    second: B&W tile set_504
+  - first:
+      213: -1484947418739357307
+    second: B&W tile set_505
+  - first:
+      213: 2642410170446431724
+    second: B&W tile set_506
+  - first:
+      213: 5286560415729068667
+    second: B&W tile set_507
+  - first:
+      213: -3426785098276184812
+    second: B&W tile set_508
+  - first:
+      213: -7789018566444584050
+    second: B&W tile set_509
+  - first:
+      213: -6244352310311235011
+    second: B&W tile set_510
+  - first:
+      213: 459792625370445122
+    second: B&W tile set_511
+  - first:
+      213: 3140272171278216058
+    second: B&W tile set_512
+  - first:
+      213: -50696766058879297
+    second: B&W tile set_513
+  - first:
+      213: -1143853635358269998
+    second: B&W tile set_514
+  - first:
+      213: 1030279278683590034
+    second: B&W tile set_515
+  - first:
+      213: -4500538280476076253
+    second: B&W tile set_516
+  - first:
+      213: 4039757433331590200
+    second: B&W tile set_517
+  - first:
+      213: 8511714787543825344
+    second: B&W tile set_518
+  - first:
+      213: 4887099069529583281
+    second: B&W tile set_519
+  - first:
+      213: -7483238929818822805
+    second: B&W tile set_520
+  - first:
+      213: -6952109541762570140
+    second: B&W tile set_521
+  - first:
+      213: -7806540489433426452
+    second: B&W tile set_522
+  - first:
+      213: -3845708013207656635
+    second: B&W tile set_523
+  - first:
+      213: 1435430512672049830
+    second: B&W tile set_524
+  - first:
+      213: 3609088540138517866
+    second: B&W tile set_525
+  - first:
+      213: -7347747464005699556
+    second: B&W tile set_526
+  - first:
+      213: 7347206951468636586
+    second: B&W tile set_527
+  - first:
+      213: -5343914052411862099
+    second: B&W tile set_528
+  - first:
+      213: 1998391952092937196
+    second: B&W tile set_529
+  - first:
+      213: 2439858770777067061
+    second: B&W tile set_530
+  - first:
+      213: -3897606195014922027
+    second: B&W tile set_531
+  - first:
+      213: 8056501007690868143
+    second: B&W tile set_532
+  - first:
+      213: 374359531595048319
+    second: B&W tile set_533
+  - first:
+      213: -247117727604027898
+    second: B&W tile set_534
+  - first:
+      213: 309487853265082761
+    second: B&W tile set_535
+  - first:
+      213: 2136263997000532094
+    second: B&W tile set_536
+  - first:
+      213: -8813100554399046511
+    second: B&W tile set_537
+  - first:
+      213: 6281343259411743467
+    second: B&W tile set_538
+  - first:
+      213: -3335357828521946418
+    second: B&W tile set_539
+  - first:
+      213: -4649947592888026479
+    second: B&W tile set_540
+  - first:
+      213: -3157566107186952508
+    second: B&W tile set_541
+  - first:
+      213: 4875358725640653287
+    second: B&W tile set_542
+  - first:
+      213: 4969866913249613017
+    second: B&W tile set_543
+  - first:
+      213: -5891064284645158955
+    second: B&W tile set_544
+  - first:
+      213: -2641140589235984144
+    second: B&W tile set_545
+  - first:
+      213: 3757264894965648019
+    second: B&W tile set_546
+  - first:
+      213: 3974618207518327320
+    second: B&W tile set_547
+  - first:
+      213: -4842391315208789566
+    second: B&W tile set_548
+  - first:
+      213: 5452559611285192165
+    second: B&W tile set_549
+  - first:
+      213: -9123883449837914086
+    second: B&W tile set_550
+  - first:
+      213: 4130917007921273561
+    second: B&W tile set_551
+  - first:
+      213: -7266696066530368779
+    second: B&W tile set_552
+  - first:
+      213: -3727561000063240885
+    second: B&W tile set_553
+  - first:
+      213: 313798453976598416
+    second: B&W tile set_554
+  - first:
+      213: 1638446331650630006
+    second: B&W tile set_555
+  - first:
+      213: -3069301963299057090
+    second: B&W tile set_556
+  - first:
+      213: -6378975225684569004
+    second: B&W tile set_557
+  - first:
+      213: -5990733917276007766
+    second: B&W tile set_558
+  - first:
+      213: -4461346217858597619
+    second: B&W tile set_559
+  - first:
+      213: 5527243322473416100
+    second: B&W tile set_560
+  - first:
+      213: 5000565403682494405
+    second: B&W tile set_561
+  - first:
+      213: 7945793119451044578
+    second: B&W tile set_562
+  - first:
+      213: -7068397306128567574
+    second: B&W tile set_563
+  - first:
+      213: 4108731262459065779
+    second: B&W tile set_564
+  - first:
+      213: -6871149217469219996
+    second: B&W tile set_565
+  - first:
+      213: -6147321838188508777
+    second: B&W tile set_566
+  - first:
+      213: 6166753861574126794
+    second: B&W tile set_567
+  - first:
+      213: 7595847214633623881
+    second: B&W tile set_568
+  - first:
+      213: -7787435028413707515
+    second: B&W tile set_569
+  - first:
+      213: -6814424169372388752
+    second: B&W tile set_570
+  - first:
+      213: 5649893444631996996
+    second: B&W tile set_571
+  - first:
+      213: -7895420533427728972
+    second: B&W tile set_572
+  - first:
+      213: -6974436588046927522
+    second: B&W tile set_573
+  - first:
+      213: 4387359198873905725
+    second: B&W tile set_574
+  - first:
+      213: -2440094874627182495
+    second: B&W tile set_575
+  - first:
+      213: 5586560243244417725
+    second: B&W tile set_576
+  - first:
+      213: -2684330996143038061
+    second: B&W tile set_577
+  - first:
+      213: 8281039155461701501
+    second: B&W tile set_578
+  - first:
+      213: 1417007702405443727
+    second: B&W tile set_579
+  - first:
+      213: 116681046502688329
+    second: B&W tile set_580
+  - first:
+      213: -1038213993882956149
+    second: B&W tile set_581
+  - first:
+      213: -354736209898159821
+    second: B&W tile set_582
+  - first:
+      213: 7324482558968730824
+    second: B&W tile set_583
+  - first:
+      213: 8409960982887965746
+    second: B&W tile set_584
+  - first:
+      213: -7150546491938261881
+    second: B&W tile set_585
+  - first:
+      213: -310920073929690773
+    second: B&W tile set_586
+  - first:
+      213: -7244912936442894402
+    second: B&W tile set_587
+  - first:
+      213: 6525559864308082264
+    second: B&W tile set_588
+  - first:
+      213: -3122779327222947014
+    second: B&W tile set_589
+  - first:
+      213: 2573909153074197898
+    second: B&W tile set_590
+  - first:
+      213: 8823985913713355995
+    second: B&W tile set_591
+  - first:
+      213: -6843224536729894507
+    second: B&W tile set_592
+  - first:
+      213: 2817163431916803698
+    second: B&W tile set_593
+  - first:
+      213: 1814774832115977683
+    second: B&W tile set_594
+  - first:
+      213: 4060911093515182176
+    second: B&W tile set_595
+  - first:
+      213: 3190772550130820740
+    second: B&W tile set_596
+  - first:
+      213: 6074724466422301161
+    second: B&W tile set_597
+  - first:
+      213: -4775615080619594188
+    second: B&W tile set_598
+  - first:
+      213: 8966929756752968004
+    second: B&W tile set_599
+  - first:
+      213: 4713041020816326136
+    second: B&W tile set_600
+  - first:
+      213: 3250307677728387584
+    second: B&W tile set_601
+  - first:
+      213: -5344273720250225296
+    second: B&W tile set_602
+  - first:
+      213: 2860701230001262134
+    second: B&W tile set_603
+  - first:
+      213: 7407432742730001030
+    second: B&W tile set_604
+  - first:
+      213: 5946130065551993966
+    second: B&W tile set_605
+  - first:
+      213: 857351258049565132
+    second: B&W tile set_606
+  - first:
+      213: -8759064239640944588
+    second: B&W tile set_607
+  - first:
+      213: 4303911648516693290
+    second: B&W tile set_608
+  - first:
+      213: 1854835332428726180
+    second: B&W tile set_609
+  - first:
+      213: 896318117964773118
+    second: B&W tile set_610
+  - first:
+      213: -2690311106182926381
+    second: B&W tile set_611
+  - first:
+      213: -2954862098985266340
+    second: B&W tile set_612
+  - first:
+      213: -2427221522956176622
+    second: B&W tile set_613
+  - first:
+      213: -6298269653731724750
+    second: B&W tile set_614
+  - first:
+      213: 1107383061449948875
+    second: B&W tile set_615
+  - first:
+      213: -7277191827140245519
+    second: B&W tile set_616
+  - first:
+      213: 3422905839145343329
+    second: B&W tile set_617
+  - first:
+      213: 7624100254536325691
+    second: B&W tile set_618
+  - first:
+      213: -8064369701703956942
+    second: B&W tile set_619
+  - first:
+      213: -1696086273444984775
+    second: B&W tile set_620
+  - first:
+      213: 5263398725195863859
+    second: B&W tile set_621
+  - first:
+      213: -2627898142214619113
+    second: B&W tile set_622
+  - first:
+      213: -4891537435937862199
+    second: B&W tile set_623
+  - first:
+      213: -7664989097222094497
+    second: B&W tile set_624
+  - first:
+      213: -5444269204893516101
+    second: B&W tile set_625
+  - first:
+      213: -8753912594081957570
+    second: B&W tile set_626
+  - first:
+      213: -3827788909500285227
+    second: B&W tile set_627
+  - first:
+      213: 7878096229126882020
+    second: B&W tile set_628
+  - first:
+      213: 3881337791508429954
+    second: B&W tile set_629
+  - first:
+      213: -6667902649187891028
+    second: B&W tile set_630
+  - first:
+      213: 1316366594901044712
+    second: B&W tile set_631
+  - first:
+      213: 8621163868948923940
+    second: B&W tile set_632
+  - first:
+      213: -2658836024547675467
+    second: B&W tile set_633
+  - first:
+      213: 415435254700004369
+    second: B&W tile set_634
+  - first:
+      213: -1243142511331904526
+    second: B&W tile set_635
+  - first:
+      213: -4300382566905356425
+    second: B&W tile set_636
+  - first:
+      213: 1186895744779250610
+    second: B&W tile set_637
+  - first:
+      213: 6142571712046137451
+    second: B&W tile set_638
+  - first:
+      213: 4724016572346558472
+    second: B&W tile set_639
+  - first:
+      213: 3429985952554718193
+    second: B&W tile set_640
+  - first:
+      213: -4182553773700304337
+    second: B&W tile set_641
+  - first:
+      213: -1916704800471707710
+    second: B&W tile set_642
+  - first:
+      213: -2218402992560053680
+    second: B&W tile set_643
+  - first:
+      213: -6748530452157032567
+    second: B&W tile set_644
+  - first:
+      213: -7533401457872928883
+    second: B&W tile set_645
+  - first:
+      213: -6721104363784718805
+    second: B&W tile set_646
+  - first:
+      213: 7213520651117896962
+    second: B&W tile set_647
+  - first:
+      213: 4940899092992443116
+    second: B&W tile set_648
+  - first:
+      213: 7512151763838377008
+    second: B&W tile set_649
+  - first:
+      213: -4408651713084856718
+    second: B&W tile set_650
+  - first:
+      213: -2119991156544327748
+    second: B&W tile set_651
+  - first:
+      213: -2324116999121405363
+    second: B&W tile set_652
+  - first:
+      213: 6414067019667121201
+    second: B&W tile set_653
+  - first:
+      213: 8363380814904271590
+    second: B&W tile set_654
+  - first:
+      213: -9045132862525319193
+    second: B&W tile set_655
+  - first:
+      213: 7259109491146239559
+    second: B&W tile set_656
+  - first:
+      213: 7832148939735270909
+    second: B&W tile set_657
+  - first:
+      213: 8745011753831696471
+    second: B&W tile set_658
+  - first:
+      213: -3040627063042228142
+    second: B&W tile set_659
+  - first:
+      213: 5482539166428562177
+    second: B&W tile set_660
+  - first:
+      213: 7728731761410981895
+    second: B&W tile set_661
+  - first:
+      213: -5797087787026342503
+    second: B&W tile set_662
+  - first:
+      213: -4821809939547356183
+    second: B&W tile set_663
+  - first:
+      213: 1584417614988361807
+    second: B&W tile set_664
+  - first:
+      213: 2640206873343560692
+    second: B&W tile set_665
+  - first:
+      213: 5751290100658142060
+    second: B&W tile set_666
+  - first:
+      213: 7835331990770977053
+    second: B&W tile set_667
+  - first:
+      213: 736704672726051983
+    second: B&W tile set_668
+  - first:
+      213: -1472131205773792925
+    second: B&W tile set_669
+  - first:
+      213: -793574682872018
+    second: B&W tile set_670
+  - first:
+      213: -107560944856054024
+    second: B&W tile set_671
+  - first:
+      213: -2479456341551021149
+    second: B&W tile set_672
+  - first:
+      213: 472385177282814682
+    second: B&W tile set_673
+  - first:
+      213: -4617616472580674685
+    second: B&W tile set_674
+  - first:
+      213: 2701888396940601077
+    second: B&W tile set_675
+  - first:
+      213: 7733876781766890105
+    second: B&W tile set_676
+  - first:
+      213: 5346833035498297285
+    second: B&W tile set_677
+  - first:
+      213: -9125036995302975719
+    second: B&W tile set_678
+  - first:
+      213: 768822323588750737
+    second: B&W tile set_679
+  - first:
+      213: 3308310771154360666
+    second: B&W tile set_680
+  - first:
+      213: 4493948486907016181
+    second: B&W tile set_681
+  - first:
+      213: -5953970882219916995
+    second: B&W tile set_682
+  - first:
+      213: 8581713740323947495
+    second: B&W tile set_683
+  - first:
+      213: 723725800940963455
+    second: B&W tile set_684
+  - first:
+      213: 3618344636639334034
+    second: B&W tile set_685
+  - first:
+      213: 6343184604428687362
+    second: B&W tile set_686
+  - first:
+      213: -8025822390724887238
+    second: B&W tile set_687
+  - first:
+      213: -3124132817589257344
+    second: B&W tile set_688
+  - first:
+      213: 5312044085323150095
+    second: B&W tile set_689
+  - first:
+      213: 3841520117136305088
+    second: B&W tile set_690
+  - first:
+      213: 7982505668764557237
+    second: B&W tile set_691
+  - first:
+      213: -7684669906892301222
+    second: B&W tile set_692
+  - first:
+      213: 4825853983743051030
+    second: B&W tile set_693
+  - first:
+      213: 5817385683489096367
+    second: B&W tile set_694
+  - first:
+      213: -529952771119212982
+    second: B&W tile set_695
+  - first:
+      213: -6813578594236460041
+    second: B&W tile set_696
+  - first:
+      213: 4240995221289561680
+    second: B&W tile set_697
+  - first:
+      213: -6088134087767965909
+    second: B&W tile set_698
+  - first:
+      213: -7147411446681496247
+    second: B&W tile set_699
+  - first:
+      213: -9033243299739697291
+    second: B&W tile set_700
+  - first:
+      213: -263327163067295239
+    second: B&W tile set_701
+  - first:
+      213: 1780768456939429035
+    second: B&W tile set_702
+  - first:
+      213: 6696552248333031700
+    second: B&W tile set_703
+  - first:
+      213: 676008762509663162
+    second: B&W tile set_704
+  - first:
+      213: -961353870335722846
+    second: B&W tile set_705
+  - first:
+      213: 8041084949891715432
+    second: B&W tile set_706
+  - first:
+      213: 4434361788997346369
+    second: B&W tile set_707
+  - first:
+      213: 7459244538179310402
+    second: B&W tile set_708
+  - first:
+      213: -9110280721345958002
+    second: B&W tile set_709
+  - first:
+      213: -7880629017891509160
+    second: B&W tile set_710
+  - first:
+      213: 3764042867492216131
+    second: B&W tile set_711
+  - first:
+      213: -2171914045391449415
+    second: B&W tile set_712
+  - first:
+      213: 8908945030577709829
+    second: B&W tile set_713
+  - first:
+      213: -9061936298201811515
+    second: B&W tile set_714
+  - first:
+      213: 9158974164569017418
+    second: B&W tile set_715
+  - first:
+      213: -2012477616340908413
+    second: B&W tile set_716
+  - first:
+      213: -2141636121847412978
+    second: B&W tile set_717
+  - first:
+      213: -3035422876466878007
+    second: B&W tile set_718
+  - first:
+      213: 2568103378851910776
+    second: B&W tile set_719
+  - first:
+      213: -8988320999846495898
+    second: B&W tile set_720
+  - first:
+      213: -4863048427593473168
+    second: B&W tile set_721
+  - first:
+      213: -1283306525155196799
+    second: B&W tile set_722
+  - first:
+      213: 9156081271508654635
+    second: B&W tile set_723
+  - first:
+      213: 7618944068007453800
+    second: B&W tile set_724
+  - first:
+      213: 5589715293170023926
+    second: B&W tile set_725
+  - first:
+      213: 4646831389674498849
+    second: B&W tile set_726
+  - first:
+      213: -6252871540882636327
+    second: B&W tile set_727
+  - first:
+      213: 1405083823894019839
+    second: B&W tile set_728
+  - first:
+      213: 6108049725234417833
+    second: B&W tile set_729
+  - first:
+      213: 2820687353613681967
+    second: B&W tile set_730
+  - first:
+      213: 148440136997005253
+    second: B&W tile set_731
+  - first:
+      213: 5480150564013536430
+    second: B&W tile set_732
+  - first:
+      213: 8411132248802763342
+    second: B&W tile set_733
+  - first:
+      213: 7978339874683279242
+    second: B&W tile set_734
+  - first:
+      213: -8123785115115855297
+    second: B&W tile set_735
+  - first:
+      213: 2450150532248499214
+    second: B&W tile set_736
+  - first:
+      213: -7944750673948269093
+    second: B&W tile set_737
+  - first:
+      213: -3717674403630266438
+    second: B&W tile set_738
+  - first:
+      213: -5856501534253521065
+    second: B&W tile set_739
+  - first:
+      213: -3158600406206953693
+    second: B&W tile set_740
+  - first:
+      213: -7180400864491825930
+    second: B&W tile set_741
+  - first:
+      213: -730318709419111670
+    second: B&W tile set_742
+  - first:
+      213: 1716053053916109984
+    second: B&W tile set_743
+  - first:
+      213: -4079071412640752788
+    second: B&W tile set_744
+  - first:
+      213: -1790157828396708987
+    second: B&W tile set_745
+  - first:
+      213: 2259138630623504446
+    second: B&W tile set_746
+  - first:
+      213: -1527639670302065776
+    second: B&W tile set_747
+  - first:
+      213: -6342162289731148481
+    second: B&W tile set_748
+  - first:
+      213: 2891871149721326846
+    second: B&W tile set_749
+  - first:
+      213: -3688781220949140544
+    second: B&W tile set_750
+  - first:
+      213: -5699698859585205081
+    second: B&W tile set_751
+  - first:
+      213: -7106273693482470384
+    second: B&W tile set_0
+  - first:
+      213: -1858762119425220687
+    second: B&W tile set_1
+  - first:
+      213: -990131510137550781
+    second: B&W tile set_2
+  - first:
+      213: 8385520432962719151
+    second: B&W tile set_3
+  - first:
+      213: -6537837030307110132
+    second: B&W tile set_4
+  - first:
+      213: -4928456623469387481
+    second: B&W tile set_5
+  - first:
+      213: -8456504970896366929
+    second: B&W tile set_6
+  - first:
+      213: -912621853308300625
+    second: B&W tile set_7
+  - first:
+      213: -9215942026009652814
+    second: B&W tile set_8
+  - first:
+      213: 8632137855676608770
+    second: B&W tile set_9
+  - first:
+      213: 5379458763631219262
+    second: B&W tile set_10
+  - first:
+      213: 7243952015912920951
+    second: B&W tile set_11
+  - first:
+      213: 50295215130689330
+    second: B&W tile set_12
+  - first:
+      213: 6308301275654568639
+    second: B&W tile set_13
+  - first:
+      213: 5833665569907127052
+    second: B&W tile set_14
+  - first:
+      213: -4905671966371831050
+    second: B&W tile set_15
+  - first:
+      213: -7210670022908708409
+    second: B&W tile set_16
+  - first:
+      213: -3908764579327410286
+    second: B&W tile set_17
+  - first:
+      213: 6201972273394195447
+    second: B&W tile set_18
+  - first:
+      213: 368728622783154044
+    second: B&W tile set_19
+  - first:
+      213: 2419342315760931970
+    second: B&W tile set_20
+  - first:
+      213: 4214120151541230445
+    second: B&W tile set_21
+  - first:
+      213: 6865230852597184574
+    second: B&W tile set_22
+  - first:
+      213: -6673260795203933089
+    second: B&W tile set_23
+  - first:
+      213: -7995811307068653154
+    second: B&W tile set_24
+  - first:
+      213: -4144949773832291043
+    second: B&W tile set_25
+  - first:
+      213: -1376121098594083772
+    second: B&W tile set_26
+  - first:
+      213: -4192642030751538761
+    second: B&W tile set_27
+  - first:
+      213: 5950556936544726944
+    second: B&W tile set_28
+  - first:
+      213: -8843524802187338063
+    second: B&W tile set_29
+  - first:
+      213: 6466759523505065803
+    second: B&W tile set_30
+  - first:
+      213: 5255576386734380832
+    second: B&W tile set_31
+  - first:
+      213: -5047593990138144925
+    second: B&W tile set_32
+  - first:
+      213: -3248552157105080894
+    second: B&W tile set_33
+  - first:
+      213: -8448914523599486249
+    second: B&W tile set_34
+  - first:
+      213: -9044688161937326306
+    second: B&W tile set_35
+  - first:
+      213: 2691307639670575793
+    second: B&W tile set_36
+  - first:
+      213: 143548009680067505
+    second: B&W tile set_37
+  - first:
+      213: -7722046618428680450
+    second: B&W tile set_38
+  - first:
+      213: -6819836192206714217
+    second: B&W tile set_39
+  - first:
+      213: -1850570962304669665
+    second: B&W tile set_40
+  - first:
+      213: 5559291240563005692
+    second: B&W tile set_41
+  - first:
+      213: -783900528690880090
+    second: B&W tile set_42
+  - first:
+      213: -1751523205911796307
+    second: B&W tile set_43
+  - first:
+      213: 5781028562425432769
+    second: B&W tile set_44
+  - first:
+      213: -5217829814397259901
+    second: B&W tile set_45
+  - first:
+      213: 5698808574584665027
+    second: B&W tile set_46
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: B&W tile set_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0143647f9b1716d90800000000000000
+      internalID: -7106273693482470384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf15b553b95436e0800000000000000
+      internalID: -1858762119425220687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 348845133a85242f0800000000000000
+      internalID: -990131510137550781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fadc587c76a5f5470800000000000000
+      internalID: 8385520432962719151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0366212cdfe445a0800000000000000
+      internalID: -6537837030307110132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721af2320da9a9bb0800000000000000
+      internalID: -4928456623469387481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_6
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2a560988574aa80800000000000000
+      internalID: -8456504970896366929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_7
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2dc4b7247b553f0800000000000000
+      internalID: -912621853308300625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_8
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1d9153e856a1080800000000000000
+      internalID: -9215942026009652814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_9
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2017ecb05a38bc770800000000000000
+      internalID: 8632137855676608770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e32d9127e3da7aa40800000000000000
+      internalID: 5379458763631219262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_11
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 777e6767affa78460800000000000000
+      internalID: 7243952015912920951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_12
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f34cf4b3fa2b000800000000000000
+      internalID: 50295215130689330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_13
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbab88f56969b8750800000000000000
+      internalID: 6308301275654568639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_14
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03bdb08de755f050800000000000000
+      internalID: 5833665569907127052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_15
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f2a0d3865d8bebb0800000000000000
+      internalID: -4905671966371831050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_16
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9f7f361dd8eeb90800000000000000
+      internalID: -7210670022908708409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_17
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29f7f8a135741c9c0800000000000000
+      internalID: -3908764579327410286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_18
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb9b765ce4d11650800000000000000
+      internalID: 6201972273394195447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_19
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7742839abcfd1500800000000000000
+      internalID: 368728622783154044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2845009940b339120800000000000000
+      internalID: 2419342315760931970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b2e6153ff8b7a30800000000000000
+      internalID: 4214120151541230445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e387b1e3613364f50800000000000000
+      internalID: 6865230852597184574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c2458c9a0d363a0800000000000000
+      internalID: -6673260795203933089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e910f17dafb290190800000000000000
+      internalID: -7995811307068653154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_25
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1df3ee342e2a76c0800000000000000
+      internalID: -4144949773832291043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c116ed62907ece0800000000000000
+      internalID: -1376121098594083772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_27
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b1aeae594eb0d5c0800000000000000
+      internalID: -4192642030751538761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_28
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0af2c72a100a49250800000000000000
+      internalID: 5950556936544726944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_29
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1be54432c0d754580800000000000000
+      internalID: -8843524802187338063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_30
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4fc466368b8eb950800000000000000
+      internalID: 6466759523505065803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_31
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 027db35e0ee8fe840800000000000000
+      internalID: 5255576386734380832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_32
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3675b6f520853f9b0800000000000000
+      internalID: -5047593990138144925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_33
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c53c615603dae2d0800000000000000
+      internalID: -3248552157105080894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_34
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2c63b410d6fba80800000000000000
+      internalID: -8448914523599486249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_35
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f7b8b9900da7280800000000000000
+      internalID: -9044688161937326306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_36
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b21cd30a02795520800000000000000
+      internalID: 2691307639670575793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_37
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bbd13d772cfdf100800000000000000
+      internalID: 143548009680067505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_38
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef65d818387c5d490800000000000000
+      internalID: -7722046618428680450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_39
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79a8a21cd131b51a0800000000000000
+      internalID: -6819836192206714217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_40
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f186d28b3837156e0800000000000000
+      internalID: -1850570962304669665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_41
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf8d2bccde1962d40800000000000000
+      internalID: 5559291240563005692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_42
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1a3285f960f15f0800000000000000
+      internalID: -783900528690880090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_43
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da526c79ce651b7e0800000000000000
+      internalID: -1751523205911796307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_44
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca41cb29d65a3050800000000000000
+      internalID: 5781028562425432769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_45
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38fa866dd6b8697b0800000000000000
+      internalID: -5217829814397259901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: B&W tile set_46
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3b11b743c361f40800000000000000
+      internalID: 5698808574584665027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
