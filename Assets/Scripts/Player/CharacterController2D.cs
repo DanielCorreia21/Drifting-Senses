@@ -30,6 +30,10 @@ public class CharacterController2D : MonoBehaviour
 	public BoolEvent OnCrouchEvent;
 	private bool m_wasCrouching = false;
 
+	private RigidbodyConstraints2D normalConstraints = RigidbodyConstraints2D.FreezeRotation;
+	private RigidbodyConstraints2D movementConstraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezeRotation;
+
+
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
@@ -63,8 +67,18 @@ public class CharacterController2D : MonoBehaviour
 
 	public void Move(float move, bool crouch, bool jump)
 	{
+		if(move == 0)
+        {
+			m_Rigidbody2D.constraints = movementConstraints;
+
+		} else
+        {
+			m_Rigidbody2D.constraints = normalConstraints;
+
+        }
+
 		// If crouching, check to see if the character can stand up
-		if (crouch)
+		if (!crouch)
 		{
 			// If the character has a ceiling preventing them from standing up, keep them crouching
 			if (Physics2D.OverlapCircle(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround))
