@@ -5,12 +5,23 @@ using UnityEngine;
 public class GunController : MonoBehaviour
 {
     public Transform playerCenter;
+    public Transform firingPoint;
+    public GameObject bulletPrefab;
 
 
     // Update is called once per frame
     void Update()
     {
         rotateGun();
+        if (Input.GetButtonDown("Fire1"))
+        {
+            Shoot();
+        }
+    }
+
+    private void Shoot()
+    {
+        Instantiate(bulletPrefab, firingPoint.position, firingPoint.rotation);
     }
 
     private void rotateGun()
