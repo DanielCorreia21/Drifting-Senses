@@ -10,7 +10,8 @@ public class PlayerMovement : MonoBehaviour
     private float _horizontalMove = 0f;
     private bool _jump = false;
     private bool _crouch = false;
-    
+    private bool _dash = false;
+
     void Start()
     {
         _controller = GetComponent<CharacterController2D>();
@@ -26,6 +27,12 @@ public class PlayerMovement : MonoBehaviour
             _jump = true;
         }
 
+        if (Input.GetButtonDown("Dash"))
+        {
+            Debug.Log("Dash");
+            _dash = true;
+        }
+
         if (Input.GetButtonDown("Crouch"))
         {
             _crouch = true;
@@ -37,8 +44,8 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
-        _controller.Move(_horizontalMove * Time.fixedDeltaTime, _crouch, _jump);
-        Debug.Log(_horizontalMove);
+        _controller.Move(_horizontalMove * Time.fixedDeltaTime, _crouch, _jump, _dash);
         _jump = false;
+        _dash = false;
     }
 }
