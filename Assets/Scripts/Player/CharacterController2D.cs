@@ -1,15 +1,19 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class CharacterController2D : MonoBehaviour
 {
-	[SerializeField] private float m_JumpForce = 400f;							// Amount of force added when the player jumps.
-	[SerializeField] private float m_DashForce = 1200f;
-	//private DashDirection dashDirection;
-	[SerializeField] public float m_DashSmoothing = 0.3f;
-	//[SerializeField] public float dashTimer;
+	[SerializeField] private float m_JumpForce = 400f;                          // Amount of force added when the player jumps.
 
-	[Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;			// Amount of maxSpeed applied to crouching movement. 1 = 100%
+    #region Dash
+    [SerializeField] private float m_DashForce = 1200f;
+    [SerializeField] private float dashCooldown = 2f;
+	private bool canDash = true;
+	
+    #endregion
+
+    [Range(0, 1)] [SerializeField] private float m_CrouchSpeed = .36f;			// Amount of maxSpeed applied to crouching movement. 1 = 100%
 	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;	// How much to smooth out the movement
 	[SerializeField] private bool m_AirControl = false;							// Whether or not a player can steer while jumping;
 	[SerializeField] private LayerMask m_WhatIsGround;							// A mask determining what is ground to the character
@@ -74,23 +78,22 @@ public class CharacterController2D : MonoBehaviour
 	{
 
         //dash should come before the constraints
-        if (dash)
+        if (dash && canDash)
         {
-			m_Rigidbody2D.AddForce(new Vector2(m_DashForce, 0f));
+			StartCoroutine(DoDash());
 		}
 
-		//if(move == 0)
-  //      {
-		//	m_Rigidbody2D.constraints = movementConstraints;
+        if (move == 0 && m_Rigidbody2D.velocity.x == 0)
+        {
+            m_Rigidbody2D.constraints = movementConstraints;
+        }
+        else
+        {
+            m_Rigidbody2D.constraints = normalConstraints;
+        }
 
-		//} else
-  //      {
-		//	m_Rigidbody2D.constraints = normalConstraints;
-
-  //      }
-
-		// If crouching, check to see if the character can stand up
-		if (!crouch)
+        // If crouching, check to see if the character can stand up
+        if (!crouch)
 		{
 			// If the character has a ceiling preventing them from standing up, keep them crouching
 			if (Physics2D.OverlapCircle(m_CeilingCheck.position, k_CeilingRadius, m_WhatIsGround))
@@ -158,18 +161,21 @@ public class CharacterController2D : MonoBehaviour
 		}
 	}
 
-	private void Dash()
+	private IEnumerator DoDash()
     {
+		canDash = false;
 
-    }
+		int dashDir = m_FacingRight ? 1 : -1;
+		m_Rigidbody2D.AddForce(new Vector2 (m_DashForce * dashDir,0f));
+
+		yield return new WaitForSeconds(dashCooldown);
+		canDash = true;
+	}
 	private void Flip()
 	{
 		// Switch the way the player is labelled as facing.
 		m_FacingRight = !m_FacingRight;
 
-		// Multiply the player's x local scale by -1.
-		Vector3 theScale = transform.localScale;
-		theScale.x *= -1;
-		transform.localScale = theScale;
+		transform.Rotate(0, 180, 0);
 	}
 }

@@ -29,7 +29,6 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetButtonDown("Dash"))
         {
-            Debug.Log("Dash");
             _dash = true;
         }
 
