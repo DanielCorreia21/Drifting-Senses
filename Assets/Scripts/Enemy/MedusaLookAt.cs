@@ -51,7 +51,7 @@ public class MedusaLookAt : StateMachineBehaviour
             //Debug.DrawRay(rb.position, (_player.position - new Vector3(rb.position.x, rb.position.y,0f)), Color.yellow);
             if (characterInfo != null )
             {
-                Debug.Log("Seen player");
+                //Debug.DrawRay(rb.position, (_player.position - new Vector3(rb.position.x, rb.position.y, 0f)), Color.red);
                 animator.SetTrigger("Attack");
             }
         }
