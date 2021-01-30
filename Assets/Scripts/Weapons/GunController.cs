@@ -53,6 +53,7 @@ public class GunController : MonoBehaviour
         _lastTimeShot = Time.realtimeSinceStartup;
     }
 
+    private bool rightSide = true;
     private void rotateGun()
     {
         Vector3 mouse_pos = Input.mousePosition;
@@ -61,6 +62,12 @@ public class GunController : MonoBehaviour
         mouse_pos.x = mouse_pos.x - object_pos.x;
         mouse_pos.y = mouse_pos.y - object_pos.y;
         float angle = Mathf.Atan2(mouse_pos.y, mouse_pos.x) * Mathf.Rad2Deg;
-        playerCenter.rotation = Quaternion.Euler(new Vector3(0f, 0f, angle));
+        float xAngle = 0f;
+        if((Mathf.Abs(angle) > 90 && rightSide) || (Mathf.Abs(angle) <= 90 && !rightSide))
+        {
+            rightSide = !rightSide;
+            transform.Rotate(180, 0, 0);
+        }
+        playerCenter.rotation = Quaternion.Euler(new Vector3(xAngle, 0f, angle));
     }
 }
