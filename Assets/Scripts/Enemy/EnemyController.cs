@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
-    [SerializeField] SoundManager soundManager;
-
     public float health = 100f;
     public bool isBoss = false;
     public GameObject healthBarPrefab;
+    public LineRenderer laser;
+    public Transform firingPoint;
 
     private Transform _canvas;
     private HealthBarController _healthBar;
     private float maxHealth;
     private Transform _player;
+    private int layerMask;
+
 
     void Start()
     {
@@ -24,6 +26,7 @@ public class EnemyController : MonoBehaviour
             _player = GameObject.FindGameObjectWithTag("Character").transform;
             _healthBar = null;
         }
+        layerMask = ~LayerMask.GetMask("Enemy");
     }
 
     void Update()
@@ -62,5 +65,42 @@ public class EnemyController : MonoBehaviour
         percentage = percentage < 0 ? 0 : percentage;
         _healthBar.UpdateHealthBar(percentage);
         SoundManager.Instance.PlaySound(SoundManager.Sound.MedusaHurt, 1f);
+    }
+
+
+    public void Attack()
+    {
+        //Debug.Log("Preparing attack!");
+        StartCoroutine(MedusaAttack());
+    }
+
+    IEnumerator MedusaAttack()
+    {
+        //Debug.Log("Preparing Attack: called at: " + Time.time);
+        Vector3 playerPos = _player.position;
+        yield return new WaitForSecondsRealtime(0.3f);
+
+        laser.SetPosition(0,firingPoint.position);
+        RaycastHit2D hitInfo = Physics2D.Raycast(firingPoint.position, (playerPos - firingPoint.position), 10, layerMask);
+        if (hitInfo)
+        {
+            laser.SetPosition(1, hitInfo.point);
+            CharacterInfo playerInfo = hitInfo.transform.GetComponent<CharacterInfo>();
+            if(playerInfo != null)
+            {
+                //TODO damage player
+            }
+        }
+        else
+        {
+            Vector3 direction = (playerPos - firingPoint.position);
+            direction *= 1.5f;
+            laser.SetPosition(1, firingPoint.position + direction);
+        }
+
+        yield return new WaitForSecondsRealtime(0.3f);
+        laser.SetPosition(0, Vector3.zero);
+        laser.SetPosition(1, Vector3.zero);
+        //Debug.Log("Attacking: called at: " + Time.time);
     }
 }

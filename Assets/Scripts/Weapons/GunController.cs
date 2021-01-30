@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class GunController : MonoBehaviour
 {
-    [SerializeField] SoundManager soundManager;
-
     public Transform playerCenter;
     public Transform firingPoint;
     public GameObject bulletPrefab;

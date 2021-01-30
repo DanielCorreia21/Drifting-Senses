@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class MedusaLookAt : StateMachineBehaviour
 {
-    [SerializeField] SoundManager soundManager;
-
     public float range = 10f;
     public float delayForAttack = 1f;
     public float timeEntered;

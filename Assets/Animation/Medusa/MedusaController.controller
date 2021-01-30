@@ -280,7 +280,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 346844e0669786c47bd237f77fc2fe56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundManager: {fileID: 0}
   range: 10
   delayForAttack: 1
   timeEntered: 0
