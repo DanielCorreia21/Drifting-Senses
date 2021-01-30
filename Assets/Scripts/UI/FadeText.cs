@@ -14,6 +14,13 @@ public class FadeText : MonoBehaviour
 
     private void Start()
     {
+    }
+
+    public IEnumerator DoShowAndHide(float fadeDuration,string text)
+    {
+        Busy = true;
+        textMeshPro.text = text;
+
         Color backgroundFixedColor = background.color;
         backgroundFixedColor.a = 1;
         background.color = backgroundFixedColor;
@@ -23,12 +30,6 @@ public class FadeText : MonoBehaviour
         textMeshProFixedColor.a = 1;
         textMeshPro.color = textMeshProFixedColor;
         textMeshPro.CrossFadeAlpha(0f, 0f, true);
-    }
-
-    public IEnumerator DoShowAndHide(float fadeDuration,string text)
-    {
-        Busy = true;
-        textMeshPro.text = text;
 
         textMeshPro.CrossFadeAlpha(1, fadeDuration,false);
         background.CrossFadeAlpha(1, fadeDuration, false);
@@ -40,6 +41,15 @@ public class FadeText : MonoBehaviour
         Busy = true;
         textMeshPro.text = text;
 
+        Color backgroundFixedColor = background.color;
+        backgroundFixedColor.a = 1;
+        background.color = backgroundFixedColor;
+        background.CrossFadeAlpha(0f, 0f, true);
+
+        Color textMeshProFixedColor = textMeshPro.color;
+        textMeshProFixedColor.a = 1;
+        textMeshPro.color = textMeshProFixedColor;
+        textMeshPro.CrossFadeAlpha(0f, 0f, true);
         textMeshPro.CrossFadeAlpha(1, fadeDuration, false);
         background.CrossFadeAlpha(1, fadeDuration, false);
         yield return new WaitForSeconds(fadeDuration + 2f);
