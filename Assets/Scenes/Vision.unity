@@ -9095,7 +9095,7 @@ MonoBehaviour:
   background: {fileID: 6542212276623228395}
   textMeshPro: {fileID: 6542212276752341459}
   startText: Vision
-  endText: You are not alone
+  endText: Sight is meangless without vision
   Busy: 0
 --- !u!222 &6542212276623228388
 CanvasRenderer:
