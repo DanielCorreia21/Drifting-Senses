@@ -7,8 +7,10 @@ public class GunController : MonoBehaviour
     public Transform playerCenter;
     public Transform firingPoint;
     public GameObject bulletPrefab;
+    public bool isAuto;
 
     public float fireRate = 2 * 60;
+    public float bulletDamage = 10f;
     private float _lastTimeShot;
 
     private void Start()
@@ -21,18 +23,32 @@ public class GunController : MonoBehaviour
     void Update()
     {
         rotateGun();
-        if (Input.GetButtonDown("Fire1"))
+        if (!isAuto)
         {
-            if((Time.realtimeSinceStartup - _lastTimeShot) > 60 / fireRate)
+            if (Input.GetButtonDown("Fire1"))
             {
-                Shoot();
+                if((Time.realtimeSinceStartup - _lastTimeShot) > 60 / fireRate)
+                {
+                    Shoot();
+                }
+            }
+        }
+        else
+        {
+            if (Input.GetButton("Fire1"))
+            {
+                if ((Time.realtimeSinceStartup - _lastTimeShot) > 60 / fireRate)
+                {
+                    Shoot();
+                }
             }
         }
     }
 
     private void Shoot()
     {
-        Instantiate(bulletPrefab, firingPoint.position, firingPoint.rotation);
+        GameObject bullet = Instantiate(bulletPrefab, firingPoint.position, firingPoint.rotation);
+        bullet.GetComponent<BulletController>().bulletDamage = this.bulletDamage;
         SoundManager.Instance.PlaySound(SoundManager.Sound.PlayerBullet, 1f);
         _lastTimeShot = Time.realtimeSinceStartup;
     }

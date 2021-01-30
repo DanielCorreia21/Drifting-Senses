@@ -7130,6 +7130,11 @@ PrefabInstance:
       propertyPath: soundManager
       value: 
       objectReference: {fileID: 506255355}
+    - target: {fileID: 2969736042915468864, guid: 7af7f026f9df1014abf5c5cda73101e8,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2969736043374876386, guid: 7af7f026f9df1014abf5c5cda73101e8,
         type: 3}
       propertyPath: m_IsActive
@@ -7169,6 +7174,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.84
+      objectReference: {fileID: 0}
+    - target: {fileID: 7965038334209124580, guid: 7af7f026f9df1014abf5c5cda73101e8,
+        type: 3}
+      propertyPath: bulletDamage
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 8387823797789289948, guid: 7af7f026f9df1014abf5c5cda73101e8,
         type: 3}
