@@ -109,6 +109,22 @@ public class LevelManager : MonoBehaviour
         }
         _playerTransform = GameObject.FindGameObjectWithTag("Character")?.transform;
         fadeText = GameObject.FindGameObjectWithTag("FadeText")?.GetComponent<FadeText>();
-        //show intro text
+
+        PlayerMovement playerMovement = _playerTransform.gameObject.GetComponent<PlayerMovement>();
+        GunController gunController = _playerTransform.gameObject.GetComponent<GunController>();
+        playerMovement.StopPlayer();
+        playerMovement.enabled = false;
+        if (gunController != null)
+            gunController.enabled = false;
+
+        StartCoroutine(fadeText.DoShowAndHideIntro(2f));
+        while (fadeText.Busy)
+        {
+            yield return null;
+        }
+
+        playerMovement.enabled = true;
+        if (gunController != null)
+            gunController.enabled = true;
     }
 }
