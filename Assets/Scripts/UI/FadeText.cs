@@ -19,10 +19,10 @@ public class FadeText : MonoBehaviour
     {
     }
 
-    public IEnumerator DoShowAndHide(float fadeDuration,string text)
+    public IEnumerator DoShowAndHideIntro(float fadeDuration)
     {
         Busy = true;
-        textMeshPro.text = text;
+        textMeshPro.text = startText;
 
         Color backgroundFixedColor = background.color;
         backgroundFixedColor.a = 1;
@@ -39,10 +39,10 @@ public class FadeText : MonoBehaviour
         yield return new WaitForSeconds(fadeDuration + 2f);
         StartCoroutine(DoHide(fadeDuration));
     }
-    public IEnumerator DoShow(float fadeDuration, string text)
+    public IEnumerator DoShowOutro(float fadeDuration)
     {
         Busy = true;
-        textMeshPro.text = text;
+        textMeshPro.text = endText;
 
         Color backgroundFixedColor = background.color;
         backgroundFixedColor.a = 1;

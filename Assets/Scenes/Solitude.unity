@@ -3215,8 +3215,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   lowestY: -1
   fadeText: {fileID: 1558870394}
-  startText: Solitude
-  endText: You are not alone
 --- !u!4 &1311955616
 Transform:
   m_ObjectHideFlags: 0
@@ -3384,6 +3382,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   background: {fileID: 543081415}
   textMeshPro: {fileID: 940091391}
+  startText: Solitude
+  endText: You are not alone
   Busy: 0
 --- !u!1 &1690375869
 GameObject:

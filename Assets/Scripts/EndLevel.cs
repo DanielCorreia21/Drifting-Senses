@@ -6,6 +6,11 @@ public class EndLevel : MonoBehaviour
 {
     public LevelManager levelManager;
 
+    private void Start()
+    {
+        levelManager = LevelManager.Instance;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Character"))
