@@ -10,6 +10,9 @@ public class FadeText : MonoBehaviour
     public Image background;
     public TextMeshProUGUI textMeshPro;
 
+    public string startText;
+    public string endText;
+
     public bool Busy = false;
 
     private void Start()

@@ -11,6 +11,24 @@ public class LevelManager : MonoBehaviour
     public FadeText fadeText;
     public string startText;
     public string endText;
+
+    #region Singleton
+    public static LevelManager Instance { get; private set; }
+
+    void Awake()
+    {
+        transform.parent = null;
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+            Destroy(gameObject);
+    }
+    #endregion
+
+
     void Start()
     {
         _playerTransform = GameObject.FindGameObjectWithTag("Character")?.transform;
@@ -70,5 +88,19 @@ public class LevelManager : MonoBehaviour
             gunController.enabled = false;
 
         StartCoroutine(fadeText.DoShow(2f, endText));
+        StartCoroutine(NextLevel());
+    }
+
+    private IEnumerator NextLevel()
+    {
+        yield return new WaitForSeconds(3f);
+        AsyncOperation op = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
+
+        while (!op.isDone)
+        {
+            yield return null;
+        }
+
+        //show intro text
     }
 }
