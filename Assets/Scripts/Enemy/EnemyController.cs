@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    public GameObject finalView;
+
     public float health = 100f;
     public bool isBoss = false;
     public GameObject healthBarPrefab;
@@ -55,6 +57,7 @@ public class EnemyController : MonoBehaviour
     private void Die()
     {
         SoundManager.Instance.PlaySound(SoundManager.Sound.MedusaDead, 1f);
+        Destroy(finalView);
         Destroy(gameObject);
     }
 
