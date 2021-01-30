@@ -37,7 +37,7 @@ public class LevelManager : MonoBehaviour
     private IEnumerator DoStartLevelText() {
 
         PlayerMovement playerMovement = _playerTransform.gameObject.GetComponent<PlayerMovement>();
-        GunController gunController = _playerTransform.gameObject.GetComponent<GunController>();
+        GunController gunController = _playerTransform.gameObject.GetComponentInChildren<GunController>();
         playerMovement.enabled = false;
         if (gunController != null)
             gunController.enabled = false;
@@ -88,7 +88,7 @@ public class LevelManager : MonoBehaviour
     public void EndLevel()
     {
         PlayerMovement playerMovement = _playerTransform.gameObject.GetComponent<PlayerMovement>();
-        GunController gunController = _playerTransform.gameObject.GetComponent<GunController>();
+        GunController gunController = _playerTransform.gameObject.GetComponentInChildren<GunController>();
         playerMovement.StopPlayer();
         playerMovement.enabled = false;
         if (gunController != null)
@@ -111,7 +111,7 @@ public class LevelManager : MonoBehaviour
         fadeText = GameObject.FindGameObjectWithTag("FadeText")?.GetComponent<FadeText>();
 
         PlayerMovement playerMovement = _playerTransform.gameObject.GetComponent<PlayerMovement>();
-        GunController gunController = _playerTransform.gameObject.GetComponent<GunController>();
+        GunController gunController = _playerTransform.gameObject.GetComponentInChildren<GunController>();
         playerMovement.StopPlayer();
         playerMovement.enabled = false;
         if (gunController != null)
