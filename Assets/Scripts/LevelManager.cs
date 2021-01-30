@@ -103,7 +103,7 @@ public class LevelManager : MonoBehaviour
         yield return new WaitForSeconds(3f);
         AsyncOperation op = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
 
-        while (!op.isDone)
+        while (op != null && !op.isDone)
         {
             yield return null;
         }
