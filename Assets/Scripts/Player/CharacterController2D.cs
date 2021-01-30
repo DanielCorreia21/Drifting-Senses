@@ -5,6 +5,7 @@ using UnityEngine.Events;
 public class CharacterController2D : MonoBehaviour
 {
 	[SerializeField] private float m_JumpForce = 400f;                          // Amount of force added when the player jumps.
+	public Animator playerAnimator;
 
     #region Dash
     [SerializeField] private float m_DashForce = 1200f;
@@ -71,6 +72,8 @@ public class CharacterController2D : MonoBehaviour
 					OnLandEvent.Invoke();
 			}
 		}
+
+		playerAnimator.SetBool("Falling", !m_Grounded);
 	}
 
 
@@ -136,6 +139,8 @@ public class CharacterController2D : MonoBehaviour
 
 			// Move the character by finding the target velocity
 			Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
+            Debug.Log("Move amount: " + Mathf.Abs(move));
+            playerAnimator.SetFloat("Speed", Mathf.Abs(move));
 			// And then smoothing it out and applying it to the character
 			m_Rigidbody2D.velocity = Vector3.SmoothDamp(m_Rigidbody2D.velocity, targetVelocity, ref m_Velocity, m_MovementSmoothing);
 
@@ -158,6 +163,7 @@ public class CharacterController2D : MonoBehaviour
 			// Add a vertical force to the player.
 			m_Grounded = false;
 			m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+			playerAnimator.SetTrigger("Jump");
 		}
 	}
 
