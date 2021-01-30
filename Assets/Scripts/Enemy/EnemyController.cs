@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyController : MonoBehaviour
+public class EnemyController : EnemyInfo
 {
     public GameObject finalView;
 
@@ -46,7 +46,7 @@ public class EnemyController : MonoBehaviour
         }
     }
 
-    public void TakeDamage(float damage)
+    public override void TakeDamage(float damage)
     {
         health -= damage;
 
