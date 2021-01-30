@@ -322,8 +322,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 100
+  regenRate: 0.05
   healthBarPrefab: {fileID: 1125420324193323618, guid: 8c709b01edd45de42ac52a12d5f6d923,
     type: 3}
+  regenActive: 1
 --- !u!1 &8387823797789289949
 GameObject:
   m_ObjectHideFlags: 0
