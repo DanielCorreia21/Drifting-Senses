@@ -5,12 +5,35 @@ using UnityEngine;
 public class GunController : MonoBehaviour
 {
     public Transform playerCenter;
+    public Transform firingPoint;
+    public GameObject bulletPrefab;
+
+    public float fireRate = 2 * 60;
+    private float _lastTimeShot;
+
+    private void Start()
+    {
+        _lastTimeShot = Time.realtimeSinceStartup;
+    }
 
 
     // Update is called once per frame
     void Update()
     {
         rotateGun();
+        if (Input.GetButtonDown("Fire1"))
+        {
+            if((Time.realtimeSinceStartup - _lastTimeShot) > 60 / fireRate)
+            {
+                Shoot();
+            }
+        }
+    }
+
+    private void Shoot()
+    {
+        Instantiate(bulletPrefab, firingPoint.position, firingPoint.rotation);
+        _lastTimeShot = Time.realtimeSinceStartup;
     }
 
     private void rotateGun()
