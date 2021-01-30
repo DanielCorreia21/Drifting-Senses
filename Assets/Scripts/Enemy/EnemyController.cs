@@ -56,13 +56,15 @@ public class EnemyController : MonoBehaviour
 
         if(health <= 0.001)
         {
-            Die();
+            StartCoroutine(Die());
         }
     }
 
-    private void Die()
+    IEnumerator Die()
     {
         SoundManager.Instance.PlaySound(SoundManager.Sound.MedusaDead, 1f);
+        transform.GetComponent<Animator>().SetTrigger("Died");
+        yield return new WaitForSeconds(1f);
         Destroy(finalView);
         Destroy(gameObject);
     }
