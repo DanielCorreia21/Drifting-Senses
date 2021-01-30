@@ -23,7 +23,14 @@ public class BulletController : MonoBehaviour
             if(enemy != null)
             {
                 enemy.TakeDamage(bulletDamage);
+
+                Animator enemyAnimator = collision.GetComponent<Animator>();
+                if(enemyAnimator != null)
+                {
+                    enemyAnimator.SetTrigger("Hurt");
+                }
             }
+
         }
     }
 
