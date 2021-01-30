@@ -23,7 +23,6 @@ public class MedusaLookAt : StateMachineBehaviour
     {
         _player = GameObject.FindGameObjectWithTag("Character").transform;
         rb = animator.GetComponent<Rigidbody2D>();
-        animator.ResetTrigger("Hurt");
     }
 
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
@@ -49,9 +48,8 @@ public class MedusaLookAt : StateMachineBehaviour
             //Debug.DrawRay(rb.position, (_player.position - new Vector3(rb.position.x, rb.position.y,0f)), Color.yellow);
             if (characterInfo != null && hit.distance < range)
             {
-                Debug.Log(hit.distance);
                 //Debug.DrawRay(rb.position, (_player.position - new Vector3(rb.position.x, rb.position.y, 0f)), Color.red);
-                animator.SetTrigger("Attack");
+                animator.GetComponent<EnemyController>().TriggerAttack(animator);
                 timeSinceLastAttck = Time.realtimeSinceStartup;
             }
         }
@@ -61,5 +59,6 @@ public class MedusaLookAt : StateMachineBehaviour
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         animator.ResetTrigger("Attack");
+        animator.ResetTrigger("Super");
     }
 }
