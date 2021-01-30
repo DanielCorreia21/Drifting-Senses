@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Solitude.unity
     guid: 8bf938e1d681c624baeb86fe2d223ec8
+  - enabled: 1
+    path: Assets/Scenes/DaniCopyShun.unity
+    guid: d1de3977951ef9b4fb37545f9f48135f
   m_configObjects: {}

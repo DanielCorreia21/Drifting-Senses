@@ -9,8 +9,6 @@ public class LevelManager : MonoBehaviour
     private Transform _playerTransform;
 
     public FadeText fadeText;
-    public string startText;
-    public string endText;
 
     #region Singleton
     public static LevelManager Instance { get; private set; }
@@ -32,6 +30,7 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         _playerTransform = GameObject.FindGameObjectWithTag("Character")?.transform;
+        fadeText = GameObject.FindGameObjectWithTag("FadeText")?.GetComponent<FadeText>();
         StartCoroutine(DoStartLevelText());
     }
 
@@ -43,7 +42,7 @@ public class LevelManager : MonoBehaviour
         if (gunController != null)
             gunController.enabled = false;
 
-        StartCoroutine(fadeText.DoShowAndHide(2f, startText));
+        StartCoroutine(fadeText.DoShowAndHideIntro(2f));
         while (fadeText.Busy)
         {
             yield return null;
@@ -57,20 +56,28 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (CheckFallOutOfLevel())
+        if (_playerTransform != null && CheckFallOutOfLevel())
         {
             //EndGame
             //Debug.Log("Player Lost!");
             //Time.timeScale = 0;
             //maybe show ui that player lost before reseting scene
-            ResetScene();
+            StartCoroutine(ResetScene());
             //Time.timeScale = 1;
         }
     }
 
-    private void ResetScene()
+    private IEnumerator ResetScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        AsyncOperation op = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
+
+        while (!op.isDone)
+        {
+            yield return null;
+        }
+        _playerTransform = GameObject.FindGameObjectWithTag("Character")?.transform;
+        fadeText = GameObject.FindGameObjectWithTag("FadeText")?.GetComponent<FadeText>();
     }
 
     private bool CheckFallOutOfLevel()
@@ -87,7 +94,7 @@ public class LevelManager : MonoBehaviour
         if (gunController != null)
             gunController.enabled = false;
 
-        StartCoroutine(fadeText.DoShow(2f, endText));
+        StartCoroutine(fadeText.DoShowOutro(2f));
         StartCoroutine(NextLevel());
     }
 
@@ -100,7 +107,24 @@ public class LevelManager : MonoBehaviour
         {
             yield return null;
         }
+        _playerTransform = GameObject.FindGameObjectWithTag("Character")?.transform;
+        fadeText = GameObject.FindGameObjectWithTag("FadeText")?.GetComponent<FadeText>();
 
-        //show intro text
+        PlayerMovement playerMovement = _playerTransform.gameObject.GetComponent<PlayerMovement>();
+        GunController gunController = _playerTransform.gameObject.GetComponent<GunController>();
+        playerMovement.StopPlayer();
+        playerMovement.enabled = false;
+        if (gunController != null)
+            gunController.enabled = false;
+
+        StartCoroutine(fadeText.DoShowAndHideIntro(2f));
+        while (fadeText.Busy)
+        {
+            yield return null;
+        }
+
+        playerMovement.enabled = true;
+        if (gunController != null)
+            gunController.enabled = true;
     }
 }
