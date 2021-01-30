@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GunController : MonoBehaviour
 {
+    [SerializeField] SoundManager soundManager;
+
     public Transform playerCenter;
     public Transform firingPoint;
     public GameObject bulletPrefab;
@@ -33,6 +35,7 @@ public class GunController : MonoBehaviour
     private void Shoot()
     {
         Instantiate(bulletPrefab, firingPoint.position, firingPoint.rotation);
+        soundManager.PlayBullet();
         _lastTimeShot = Time.realtimeSinceStartup;
     }
 

@@ -3897,28 +3897,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72ece51f2901e7445ab60da3685d6b5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ShowDebugText: 0
-  m_ShowCameraFrustum: 1
-  m_IgnoreTimeScale: 0
-  m_WorldUpOverride: {fileID: 0}
-  m_UpdateMethod: 2
-  m_BlendUpdateMethod: 1
-  m_DefaultBlend:
-    m_Style: 1
-    m_Time: 2
-    m_CustomCurve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-  m_CustomBlends: {fileID: 0}
-  m_CameraCutEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_CameraActivatedEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!1 &1466345111063393017
 GameObject:
   m_ObjectHideFlags: 0
@@ -4171,6 +4149,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7af7f026f9df1014abf5c5cda73101e8, type: 3}
+--- !u!1001 &4975072982486708701
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2339154241959703097, guid: f624a1a1418320644a092bebccc7528d,
+        type: 3}
+      propertyPath: m_Name
+      value: VisionBackMusic
+      objectReference: {fileID: 0}
+    - target: {fileID: 2339154241959703103, guid: f624a1a1418320644a092bebccc7528d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 5.1711435
+      objectReference: {fileID: 0}
+    - target: {fileID: 2339154241959703103, guid: f624a1a1418320644a092bebccc7528d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.9470463
+      objectReference: {fileID: 0}
+    - target: {fileID: 2339154241959703103, guid: f624a1a1418320644a092bebccc7528d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -3.6891046
+      objectReference: {fileID: 0}
+    - target: {fileID: 2339154241959703103, guid: f624a1a1418320644a092bebccc7528d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2339154241959703103, guid: f624a1a1418320644a092bebccc7528d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2339154241959703103, guid: f624a1a1418320644a092bebccc7528d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2339154241959703103, guid: f624a1a1418320644a092bebccc7528d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2339154241959703103, guid: f624a1a1418320644a092bebccc7528d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2339154241959703103, guid: f624a1a1418320644a092bebccc7528d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2339154241959703103, guid: f624a1a1418320644a092bebccc7528d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2339154241959703103, guid: f624a1a1418320644a092bebccc7528d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f624a1a1418320644a092bebccc7528d, type: 3}
 --- !u!1001 &5322568144309355262
 PrefabInstance:
   m_ObjectHideFlags: 0
