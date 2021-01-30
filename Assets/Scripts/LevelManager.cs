@@ -67,7 +67,7 @@ public class LevelManager : MonoBehaviour
         }
     }
 
-    private IEnumerator ResetScene()
+    public IEnumerator ResetScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         AsyncOperation op = SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name);
