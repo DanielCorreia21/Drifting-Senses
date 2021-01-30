@@ -547,6 +547,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &371988803 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9185319509086520890, guid: 4a3d189bc7a23654d9d789b4f6cdf480,
+    type: 3}
+  m_PrefabInstance: {fileID: 9185319508720312185}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &388628739
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8193,6 +8199,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1300850450
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1300850451}
+  m_Layer: 0
+  m_Name: Batmacs
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1300850451
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1300850450}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7.8739734, y: 8.787609, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 371988803}
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1382577925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9090,7 +9127,7 @@ MonoBehaviour:
   background: {fileID: 6542212276623228395}
   textMeshPro: {fileID: 6542212276752341459}
   startText: Vision
-  endText: You are not alone
+  endText: Sight is meangless without vision
   Busy: 0
 --- !u!222 &6542212276623228388
 CanvasRenderer:
@@ -9398,3 +9435,72 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1001 &9185319508720312185
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1300850451}
+    m_Modifications:
+    - target: {fileID: 9185319509086520890, guid: 4a3d189bc7a23654d9d789b4f6cdf480,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.583
+      objectReference: {fileID: 0}
+    - target: {fileID: 9185319509086520890, guid: 4a3d189bc7a23654d9d789b4f6cdf480,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 7.296
+      objectReference: {fileID: 0}
+    - target: {fileID: 9185319509086520890, guid: 4a3d189bc7a23654d9d789b4f6cdf480,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9185319509086520890, guid: 4a3d189bc7a23654d9d789b4f6cdf480,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9185319509086520890, guid: 4a3d189bc7a23654d9d789b4f6cdf480,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9185319509086520890, guid: 4a3d189bc7a23654d9d789b4f6cdf480,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9185319509086520890, guid: 4a3d189bc7a23654d9d789b4f6cdf480,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9185319509086520890, guid: 4a3d189bc7a23654d9d789b4f6cdf480,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9185319509086520890, guid: 4a3d189bc7a23654d9d789b4f6cdf480,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9185319509086520890, guid: 4a3d189bc7a23654d9d789b4f6cdf480,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9185319509086520890, guid: 4a3d189bc7a23654d9d789b4f6cdf480,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9185319509086520891, guid: 4a3d189bc7a23654d9d789b4f6cdf480,
+        type: 3}
+      propertyPath: m_Name
+      value: Batmac
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4a3d189bc7a23654d9d789b4f6cdf480, type: 3}
