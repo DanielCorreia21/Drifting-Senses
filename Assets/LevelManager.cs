@@ -19,7 +19,10 @@ public class LevelManager : MonoBehaviour
         {
             //EndGame
             //Debug.Log("Player Lost!");
+            //Time.timeScale = 0;
+            //maybe show ui that player lost before reseting scene
             ResetScene();
+            //Time.timeScale = 1;
         }
     }
 
