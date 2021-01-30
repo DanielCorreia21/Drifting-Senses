@@ -183,4 +183,6 @@ public class CharacterController2D : MonoBehaviour
 
 		transform.Rotate(0, 180, 0);
 	}
+
+    public void StopCharacter() => m_Rigidbody2D.velocity = new Vector3(0,0,0);
 }

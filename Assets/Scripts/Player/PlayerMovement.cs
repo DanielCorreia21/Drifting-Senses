@@ -47,4 +47,9 @@ public class PlayerMovement : MonoBehaviour
         _jump = false;
         _dash = false;
     }
+
+    public void StopPlayer()
+    {
+        _controller.StopCharacter();
+    }
 }
