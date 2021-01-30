@@ -94,6 +94,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27c4c65a9cd1f34439c63db920015528, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  soundManager: {fileID: 0}
   health: 100
   isBoss: 1
   healthBarPrefab: {fileID: 6366670967511187773, guid: 741cef5c52980a64684f17a6531c6239,

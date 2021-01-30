@@ -2,30 +2,50 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SoundManager : MonoBehaviour
-{
-    //Player Sounds
-    [SerializeField] AudioClip bullet;
-    [SerializeField] AudioClip dash;
+public class SoundManager : MonoBehaviour {
 
+    [SerializeField] public SoundAudioClip[] sounds;
 
-    //Background music
-    [SerializeField] AudioClip solitude;
-    [SerializeField] AudioClip vision;
+    public static SoundManager Instance { get; private set; }
 
-    //Player
-    [SerializeField] AudioSource playerAudio;
-    // Start is called before the first frame update
-    void Start()
-    {
+    void Awake() {
+        transform.parent = null;
+        if (Instance == null) {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        } else
+            Destroy(gameObject);
+    }
+
+    public enum Sound {
+        PlayerBullet,
+        PlayerDash,
+        MedusaDead,
+        MedusaLaser,
+        MedusaHurt
+    }
+
+    public void PlaySound(Sound sound, float soundVolume) {
+        GameObject soundgameobject = new GameObject("Sound");
+        AudioSource audioSource = soundgameobject.AddComponent<AudioSource>();
+        audioSource.PlayOneShot(GetAudioClip(sound), soundVolume);
+        Destroy(soundgameobject, 0.8f);
+    }
+
+    private AudioClip GetAudioClip(Sound sound) {
+        foreach(SoundAudioClip s in sounds){
+            if(s.sound == sound) {
+                return s.audioClip;
+            }
+        }
+        return null;
+    }
         
-    }
 
-    public void PlayBullet() {
-        playerAudio.PlayOneShot(bullet);
-    }
-    public void PlayDash() {
-        playerAudio.PlayOneShot(dash);
+    [System.Serializable]
+    public class SoundAudioClip{
+        public Sound sound;
+        public AudioClip audioClip;
     }
 
 }

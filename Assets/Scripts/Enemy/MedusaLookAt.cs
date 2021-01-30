@@ -52,6 +52,7 @@ public class MedusaLookAt : StateMachineBehaviour
             if (characterInfo != null )
             {
                 //Debug.DrawRay(rb.position, (_player.position - new Vector3(rb.position.x, rb.position.y, 0f)), Color.red);
+                SoundManager.Instance.PlaySound(SoundManager.Sound.MedusaLaser, 0.1f);
                 animator.SetTrigger("Attack");
             }
         }
