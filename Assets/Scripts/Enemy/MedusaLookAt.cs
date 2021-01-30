@@ -47,8 +47,9 @@ public class MedusaLookAt : StateMachineBehaviour
         {
             CharacterInfo characterInfo = hit.collider.GetComponent<CharacterInfo>();
             //Debug.DrawRay(rb.position, (_player.position - new Vector3(rb.position.x, rb.position.y,0f)), Color.yellow);
-            if (characterInfo != null )
+            if (characterInfo != null && hit.distance < range)
             {
+                Debug.Log(hit.distance);
                 //Debug.DrawRay(rb.position, (_player.position - new Vector3(rb.position.x, rb.position.y, 0f)), Color.red);
                 animator.SetTrigger("Attack");
                 timeSinceLastAttck = Time.realtimeSinceStartup;

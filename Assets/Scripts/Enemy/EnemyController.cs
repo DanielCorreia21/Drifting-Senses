@@ -81,7 +81,7 @@ public class EnemyController : MonoBehaviour
         yield return new WaitForSecondsRealtime(0.3f);
 
         laser.SetPosition(0,firingPoint.position);
-        RaycastHit2D hitInfo = Physics2D.Raycast(firingPoint.position, (playerPos - firingPoint.position), 10, layerMask);
+        RaycastHit2D hitInfo = Physics2D.Raycast(firingPoint.position, (playerPos - firingPoint.position), 20, layerMask);
         if (hitInfo)
         {
             laser.SetPosition(1, hitInfo.point);
@@ -89,6 +89,7 @@ public class EnemyController : MonoBehaviour
             if(playerInfo != null)
             {
                 //TODO damage player
+                playerInfo.TakeDamage(10f);
             }
         }
         else

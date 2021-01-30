@@ -280,9 +280,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 346844e0669786c47bd237f77fc2fe56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 10
-  delayForAttack: 1
-  timeEntered: 0
+  range: 4
+  delayForAttack: 1.5
+  timeSinceLastAttck: 0
 --- !u!1107 &8623667033940598798
 AnimatorStateMachine:
   serializedVersion: 5
