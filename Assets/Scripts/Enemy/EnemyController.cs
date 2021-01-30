@@ -97,8 +97,9 @@ public class EnemyController : MonoBehaviour
             direction *= 1.5f;
             laser.SetPosition(1, firingPoint.position + direction);
         }
+        SoundManager.Instance.PlaySound(SoundManager.Sound.MedusaLaser, 0.1f);
 
-        yield return new WaitForSecondsRealtime(0.3f);
+        yield return new WaitForSecondsRealtime(0.15f);
         laser.SetPosition(0, Vector3.zero);
         laser.SetPosition(1, Vector3.zero);
         //Debug.Log("Attacking: called at: " + Time.time);

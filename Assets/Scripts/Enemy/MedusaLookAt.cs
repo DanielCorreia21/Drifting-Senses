@@ -5,8 +5,8 @@ using UnityEngine;
 public class MedusaLookAt : StateMachineBehaviour
 {
     public float range = 10f;
-    public float delayForAttack = 1f;
-    public float timeEntered;
+    public float delayForAttack = 2f;
+    public float timeSinceLastAttck = 0f;
 
     private Transform _player;
     private Rigidbody2D rb;
@@ -23,7 +23,6 @@ public class MedusaLookAt : StateMachineBehaviour
     {
         _player = GameObject.FindGameObjectWithTag("Character").transform;
         rb = animator.GetComponent<Rigidbody2D>();
-        timeEntered = Time.realtimeSinceStartup;
         animator.ResetTrigger("Hurt");
     }
 
@@ -41,8 +40,7 @@ public class MedusaLookAt : StateMachineBehaviour
         }
 
         //Do not try to attack if you just entered idle
-        if (Time.realtimeSinceStartup - this.timeEntered < this.delayForAttack) return;
-
+        if (Time.realtimeSinceStartup - this.timeSinceLastAttck < this.delayForAttack) return;
 
         RaycastHit2D hit = Physics2D.Raycast(rb.position, (_player.position - new Vector3(rb.position.x, rb.position.y, 0f)), range, layerMask);
         if(hit.collider != null)
@@ -52,8 +50,8 @@ public class MedusaLookAt : StateMachineBehaviour
             if (characterInfo != null )
             {
                 //Debug.DrawRay(rb.position, (_player.position - new Vector3(rb.position.x, rb.position.y, 0f)), Color.red);
-                SoundManager.Instance.PlaySound(SoundManager.Sound.MedusaLaser, 0.1f);
                 animator.SetTrigger("Attack");
+                timeSinceLastAttck = Time.realtimeSinceStartup;
             }
         }
     }
