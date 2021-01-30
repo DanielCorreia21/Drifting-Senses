@@ -35,7 +35,7 @@ public class GunController : MonoBehaviour
     private void Shoot()
     {
         Instantiate(bulletPrefab, firingPoint.position, firingPoint.rotation);
-        soundManager.PlayBullet();
+        SoundManager.Instance.PlaySound(SoundManager.Sound.PlayerBullet, 1f);
         _lastTimeShot = Time.realtimeSinceStartup;
     }
 

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour
 {
+    [SerializeField] SoundManager soundManager;
+
     public float health = 100f;
     public bool isBoss = false;
     public GameObject healthBarPrefab;
@@ -49,6 +51,7 @@ public class EnemyController : MonoBehaviour
 
     private void Die()
     {
+        SoundManager.Instance.PlaySound(SoundManager.Sound.MedusaDead, 1f);
         Destroy(gameObject);
     }
 
@@ -58,5 +61,6 @@ public class EnemyController : MonoBehaviour
         float percentage = this.health / this.maxHealth;
         percentage = percentage < 0 ? 0 : percentage;
         _healthBar.UpdateHealthBar(percentage);
+        SoundManager.Instance.PlaySound(SoundManager.Sound.MedusaHurt, 1f);
     }
 }

@@ -174,7 +174,7 @@ public class CharacterController2D : MonoBehaviour
 
 		int dashDir = m_FacingRight ? 1 : -1;
 		m_Rigidbody2D.AddForce(new Vector2 (m_DashForce * dashDir,0f));
-		soundManager.PlayDash();
+		SoundManager.Instance.PlaySound(SoundManager.Sound.PlayerDash, 1f);
 		yield return new WaitForSeconds(dashCooldown);
 		canDash = true;
 	}

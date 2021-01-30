@@ -175,7 +175,6 @@ GameObject:
   - component: {fileID: 112075029171589668}
   - component: {fileID: 112075029171589671}
   - component: {fileID: 112075029171589670}
-  - component: {fileID: 8823062587623742537}
   - component: {fileID: -8724718914549396918}
   - component: {fileID: 5158139077684007611}
   m_Layer: 8
@@ -278,7 +277,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b791ef6ba026824c836d0dacdd0f1ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundManager: {fileID: 8823062587623742537}
+  soundManager: {fileID: 0}
   m_JumpForce: 300
   playerAnimator: {fileID: 112075028846648967}
   m_DashForce: 750
@@ -311,23 +310,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   runSpeed: 10
---- !u!114 &8823062587623742537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 112075029171589665}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 547918f5b505c9f4eb986bf0092c9e0d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bullet: {fileID: 8300000, guid: 3908a52d63561e94c86088cfd6323880, type: 3}
-  dash: {fileID: 8300000, guid: ead4762062be54f42bede27aebdd5681, type: 3}
-  solitude: {fileID: 0}
-  vision: {fileID: 0}
-  playerAudio: {fileID: -8724718914549396918}
 --- !u!82 &-8724718914549396918
 AudioSource:
   m_ObjectHideFlags: 0
@@ -594,7 +576,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9245418a5d23d034aa2f4828df047786, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundManager: {fileID: 8823062587623742537}
+  soundManager: {fileID: 0}
   playerCenter: {fileID: 6692135581550252174}
   firingPoint: {fileID: 5708386236342306015}
   bulletPrefab: {fileID: 984793650151916129, guid: d0e1fc230abad2940b6cf8681904adf1,
