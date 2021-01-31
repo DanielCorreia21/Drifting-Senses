@@ -84,7 +84,10 @@ public class GluttonyEnemy : EnemyInfo
         SoundManager.Instance.PlaySound(SoundManager.Sound.GluttonyHurt, 0.2f);
         float percentage = this.health / this.maxHealth;
         percentage = percentage < 0 ? 0 : percentage;
-        _healthBar.UpdateHealthBar(percentage);
+        if(_healthBar != null)
+        {
+            _healthBar.UpdateHealthBar(percentage);
+        }
     }
 
     private bool onRush = false;

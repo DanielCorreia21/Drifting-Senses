@@ -4374,6 +4374,18 @@ PrefabInstance:
       propertyPath: BackgroundMusic
       value: 
       objectReference: {fileID: 88899182}
+    - target: {fileID: 6542212276065060429, guid: 07a7bb4ae5e58d24c92878a14cdfad80,
+        type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 4e6a9f5ebda7e68428437716e2e3a5f9,
+        type: 2}
+    - target: {fileID: 6542212276065060429, guid: 07a7bb4ae5e58d24c92878a14cdfad80,
+        type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 4854646095890659690, guid: 4e6a9f5ebda7e68428437716e2e3a5f9,
+        type: 2}
     - target: {fileID: 6542212276279754293, guid: 07a7bb4ae5e58d24c92878a14cdfad80,
         type: 3}
       propertyPath: m_Name
