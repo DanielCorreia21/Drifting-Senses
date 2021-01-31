@@ -56,6 +56,12 @@ public class LevelManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(_playerTransform == null)
+        {
+            _playerTransform = GameObject.FindGameObjectWithTag("Character")?.transform;
+            fadeText = GameObject.FindGameObjectWithTag("FadeText")?.GetComponent<FadeText>();
+        }
+
         if (_playerTransform != null && CheckFallOutOfLevel())
         {
             //EndGame
@@ -76,6 +82,7 @@ public class LevelManager : MonoBehaviour
         {
             yield return null;
         }
+        yield return new WaitForSeconds(1f);
         _playerTransform = GameObject.FindGameObjectWithTag("Character")?.transform;
         fadeText = GameObject.FindGameObjectWithTag("FadeText")?.GetComponent<FadeText>();
     }
