@@ -790,7 +790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162076cfa2cc977449412474badca571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EscPanel: {fileID: 0}
+  EscPanel: {fileID: 3755184261243269320}
   BackgroundMusic: {fileID: 0}
 --- !u!1 &6542212276683544778
 GameObject:
