@@ -42,9 +42,12 @@ public class GluttonyIdleAction : StateMachineBehaviour
         //Do a super every 20 seconds
         if (Time.realtimeSinceStartup - this.timeSinceLastSuper >= 20f)
         {
-            GluttonyEnemy enemyController = animator.GetComponent<GluttonyEnemy>();
-            enemyController.TriggerHpRegen(animator);
-            timeSinceLastSuper = Time.realtimeSinceStartup;
+            if (Vector3.Distance(_player.position, rb.position) <= range)
+            {
+                GluttonyEnemy enemyController = animator.GetComponent<GluttonyEnemy>();
+                enemyController.TriggerHpRegen(animator);
+                timeSinceLastSuper = Time.realtimeSinceStartup;
+            }
             return;
         }
 

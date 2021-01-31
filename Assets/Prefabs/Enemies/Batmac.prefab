@@ -200,7 +200,7 @@ MonoBehaviour:
   attackRange: 0.4
   attackDamage: 7
   attackSpeed: 0.5
-  health: 20
+  health: 50
   macDropChance: 0.05
   foodDrops:
   - {fileID: 459969357102925042, guid: 0d73c901facd66b4b9759a97912b3199, type: 3}
