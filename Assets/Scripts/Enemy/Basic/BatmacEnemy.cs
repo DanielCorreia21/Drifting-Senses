@@ -52,7 +52,8 @@ public class BatmacEnemy : EnemyInfo
         if (distToPlayer <= attackRange)
         {
             StartCoroutine(Attack());
-        } else if (distToPlayer <= detectionRange)
+        } 
+        else if (distToPlayer <= detectionRange)
         {
             follow(target.transform);
 
