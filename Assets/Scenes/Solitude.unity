@@ -4354,6 +4354,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: Resume
       objectReference: {fileID: 0}
+    - target: {fileID: 3365043946304806954, guid: 07a7bb4ae5e58d24c92878a14cdfad80,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Quit
+      objectReference: {fileID: 0}
     - target: {fileID: 3755184261243269320, guid: 07a7bb4ae5e58d24c92878a14cdfad80,
         type: 3}
       propertyPath: m_IsActive
