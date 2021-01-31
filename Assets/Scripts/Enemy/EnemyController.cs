@@ -64,8 +64,9 @@ public class EnemyController : EnemyInfo
     {
         SoundManager.Instance.PlaySound(SoundManager.Sound.MedusaDead, 1f);
         transform.GetComponent<Animator>().SetTrigger("Died");
-        yield return new WaitForSeconds(1f);
         Destroy(finalView);
+        yield return new WaitForSeconds(1f);
+        LevelManager.Instance.EndLevel();
         Destroy(gameObject);
     }
 

@@ -16,10 +16,12 @@ public class CharacterInfo : MonoBehaviour
     private void Start()
     {
         maxHealth = health;
-        _healthBar = Instantiate(healthBarPrefab, GameObject.FindGameObjectWithTag("Canvas").transform).GetComponent<HealthBarController>();
+        GameObject healthBarObject = Instantiate(healthBarPrefab, GameObject.FindGameObjectWithTag("Canvas").transform);
+        healthBarObject.transform.SetSiblingIndex(0);
+        _healthBar = healthBarObject.transform.GetComponent<HealthBarController>();
         if (regenActive)
         {
-            InvokeRepeating(nameof(RegenHealth), 0.2f, 0.2f);
+            InvokeRepeating(nameof(RegenRepeatingHealth), 0.2f, 0.2f);
         }
     }
 
@@ -35,9 +37,14 @@ public class CharacterInfo : MonoBehaviour
         //TODO death
     }
 
-    private void RegenHealth()
+    private void RegenRepeatingHealth()
     {
-        health += regenRate;
+        RegenHealth(this.regenRate);
+    }
+
+    public void RegenHealth(float ammount)
+    {
+        health += ammount;
         health = health > maxHealth ? maxHealth : health;
 
         UpdateHealthBar();
