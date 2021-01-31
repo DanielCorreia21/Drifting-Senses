@@ -87,6 +87,7 @@ public class LevelManager : MonoBehaviour
 
     public void EndLevel()
     {
+        _playerTransform = GameObject.FindGameObjectWithTag("Character")?.transform;
         PlayerMovement playerMovement = _playerTransform.gameObject.GetComponent<PlayerMovement>();
         GunController gunController = _playerTransform.gameObject.GetComponentInChildren<GunController>();
         playerMovement.StopPlayer();
