@@ -15,8 +15,6 @@ public class GluttonyEnemy : EnemyInfo
     public float speed = 2f;
     private Stack<float> _superPercentages;
 
-
-    public LineRenderer laser;
     private Transform _canvas;
     public GameObject healthBarPrefab;
     private HealthBarController _healthBar;
@@ -24,6 +22,7 @@ public class GluttonyEnemy : EnemyInfo
     private Transform _player;
     private int layerMask;
 
+    private Coroutine bullRushCoroutine;
 
     void Start()
     {
@@ -56,6 +55,7 @@ public class GluttonyEnemy : EnemyInfo
         health -= damage;
 
         if (isBoss) {
+
             UpdateHealthBar();
         }
 
@@ -67,8 +67,12 @@ public class GluttonyEnemy : EnemyInfo
 
     IEnumerator Die()
     {
-        SoundManager.Instance.PlaySound(SoundManager.Sound.MedusaDead, 1f);
-        transform.GetComponent<Animator>().SetTrigger("Died");
+        SoundManager.Instance.PlaySound(SoundManager.Sound.GluttonyDead, 1f);
+        StopAllCoroutines();
+        rb.MovePosition(transform.position); // stop movign
+
+
+        transform.GetComponent<Animator>().SetTrigger("Die");
         yield return new WaitForSeconds(1f);
         LevelManager.Instance.EndLevel();
         Destroy(gameObject);
@@ -76,96 +80,10 @@ public class GluttonyEnemy : EnemyInfo
 
     private void UpdateHealthBar()
     {
+        SoundManager.Instance.PlaySound(SoundManager.Sound.GluttonyHurt, 0.2f);
         float percentage = this.health / this.maxHealth;
         percentage = percentage < 0 ? 0 : percentage;
         _healthBar.UpdateHealthBar(percentage);
-        SoundManager.Instance.PlaySound(SoundManager.Sound.MedusaHurt, 1f);
-    }
-
-
-    public void Attack()
-    {
-        //Debug.Log("Preparing attack!");
-        StartCoroutine(MedusaAttack());
-    }
-
-    public void SuperAttack()
-    {
-        StartCoroutine(GluttonySuperAttack());
-    }
-
-    IEnumerator GluttonySuperAttack()
-    {
-
-        gluttonySuperParticleEffect.SetActive(true);
-        Debug.Log("Enabling particle effect");
-        yield return new WaitForSeconds(1.08f);
-        gluttonySuperParticleEffect.SetActive(false);
-
-        Coroutine movedCor = StartCoroutine(CheckPlayerMoved(_player.position));
-
-        yield return new WaitForSeconds(1f);
-
-        StopCoroutine(movedCor);
-        
-    }
-
-    IEnumerator CheckPlayerMoved(Vector3 initialPos)
-    {
-        Vector3 newPos = _player.position;
-        while (Vector3.Distance(initialPos, newPos) < 0.01)
-        {
-            newPos = _player.position;
-            yield return null;
-        }
-        _player.GetComponent<CharacterInfo>()?.TakeDamage(50f);
-    }
-
-    IEnumerator MedusaAttack()
-    {
-        //Debug.Log("Preparing Attack: called at: " + Time.time);
-        Vector3 playerPos = _player.position;
-        yield return new WaitForSecondsRealtime(0.3f);
-
-        laser.SetPosition(0,firingPoint.position);
-        RaycastHit2D hitInfo = Physics2D.Raycast(firingPoint.position, (playerPos - firingPoint.position), 20, layerMask);
-        if (hitInfo)
-        {
-            laser.SetPosition(1, hitInfo.point);
-            CharacterInfo playerInfo = hitInfo.transform.GetComponent<CharacterInfo>();
-            if(playerInfo != null)
-            {
-                //TODO damage player
-                playerInfo.TakeDamage(10f);
-            }
-        }
-        else
-        {
-            Vector3 direction = (playerPos - firingPoint.position);
-            direction *= 1.5f;
-            laser.SetPosition(1, firingPoint.position + direction);
-        }
-        SoundManager.Instance.PlaySound(SoundManager.Sound.MedusaLaser, 0.3f);
-
-        yield return new WaitForSecondsRealtime(0.15f);
-        laser.SetPosition(0, Vector3.zero);
-        laser.SetPosition(1, Vector3.zero);
-        //Debug.Log("Attacking: called at: " + Time.time);
-    }
-
-    internal void TriggerAttack(Animator animator)
-    {
-        if(_superPercentages.Count > 0 && health < _superPercentages.Peek())
-        {
-            _superPercentages.Pop();
-            Debug.Log("Super");
-            animator.SetTrigger("Super");
-        }
-        else
-        {
-            animator.SetTrigger("Attack");
-        }
-
     }
 
     private bool onRush = false;
@@ -181,7 +99,7 @@ public class GluttonyEnemy : EnemyInfo
             mult = -1;
         }
 
-        StartCoroutine(BullRush(mult,animator));
+        bullRushCoroutine = StartCoroutine(BullRush(mult,animator));
 
     }
 
@@ -199,9 +117,11 @@ public class GluttonyEnemy : EnemyInfo
         collided = false;
         onRush = true;
         animator.SetBool("Rush", true);
+        SoundManager.Instance.PlaySound(SoundManager.Sound.GluttonyRush, 0.5f);
         while (!collided)
         {
             //move
+            
             rb.MovePosition(transform.position);
             Vector2 targetPos = new Vector2(transform.position.x + 0.1f * mult, transform.position.y);
             rb.MovePosition(targetPos);
@@ -235,11 +155,41 @@ public class GluttonyEnemy : EnemyInfo
 
         //throw the food
         GameObject food = Instantiate(foodPrefab, firingPoint.position, firingPoint.rotation);
-        SoundManager.Instance.PlaySound(SoundManager.Sound.PlayerBullet, 1f);
+        SoundManager.Instance.PlaySound(SoundManager.Sound.GluttonyAtack, 0.3f);
 
         //TODO
        // There are situations where the player can hit the boss, but the boss doens't it back
 
         yield return null;
+    }
+
+    public void TriggerHpRegen(Animator animator)
+    {
+        StartCoroutine(HpRegen(animator));
+    }
+
+    private IEnumerator HpRegen(Animator animator)
+    {
+        animator.SetBool("HpRegen", true);
+        gluttonySuperParticleEffect.SetActive(true);
+
+        if(bullRushCoroutine!=null) StopCoroutine(bullRushCoroutine);
+
+        rb.MovePosition(transform.position); // stop movign
+        yield return new WaitForSeconds(1.5f);
+
+        health += 200;
+        if (health >= maxHealth)
+        {
+            health = maxHealth;
+        }
+        UpdateHealthBar();
+  
+        yield return new WaitForSeconds(1f);
+
+
+        gluttonySuperParticleEffect.SetActive(false);
+        animator.SetBool("HpRegen", false);
+
     }
 }
