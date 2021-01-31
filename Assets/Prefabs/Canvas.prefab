@@ -119,8 +119,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: ExitGame
+      - m_Target: {fileID: 5049046983601145094}
+        m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -790,7 +790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 162076cfa2cc977449412474badca571, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EscPanel: {fileID: 0}
+  EscPanel: {fileID: 3755184261243269320}
   BackgroundMusic: {fileID: 0}
 --- !u!1 &6542212276683544778
 GameObject:
@@ -911,7 +911,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Main Menu
+  m_text: Quit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4e6a9f5ebda7e68428437716e2e3a5f9, type: 2}
   m_sharedMaterial: {fileID: 4854646095890659690, guid: 4e6a9f5ebda7e68428437716e2e3a5f9,

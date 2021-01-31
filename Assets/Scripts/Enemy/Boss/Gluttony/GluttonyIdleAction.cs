@@ -57,11 +57,11 @@ public class GluttonyIdleAction : StateMachineBehaviour
         if (Vector3.Distance(_player.position,rb.position) <= range)
         {
 
-            if (rb.position.y - _player.position.y  < -0.3f && Vector3.Distance(_player.position, rb.position) <= enemyController.bullRushRange)
+            if (rb.position.y - _player.position.y  < -0.3f )
             {
                 animator.SetTrigger("Attack");
                 
-            } else
+            } else if(Vector3.Distance(_player.position, rb.position) <= enemyController.bullRushRange)
             {
                 //the player is standing on the ground or about to stand. Bull rush him
                 enemyController.TriggerBullRush(animator);

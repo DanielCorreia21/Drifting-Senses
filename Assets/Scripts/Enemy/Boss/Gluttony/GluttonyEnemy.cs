@@ -56,6 +56,7 @@ public class GluttonyEnemy : EnemyInfo
         health -= damage;
 
         if (isBoss) {
+
             UpdateHealthBar();
         }
 
@@ -67,6 +68,7 @@ public class GluttonyEnemy : EnemyInfo
 
     IEnumerator Die()
     {
+        SoundManager.Instance.PlaySound(SoundManager.Sound.GluttonyDead, 1f);
         StopAllCoroutines();
         rb.MovePosition(transform.position); // stop movign
 
@@ -79,6 +81,7 @@ public class GluttonyEnemy : EnemyInfo
 
     private void UpdateHealthBar()
     {
+        SoundManager.Instance.PlaySound(SoundManager.Sound.GluttonyHurt, 0.2f);
         float percentage = this.health / this.maxHealth;
         percentage = percentage < 0 ? 0 : percentage;
         _healthBar.UpdateHealthBar(percentage);
@@ -115,9 +118,11 @@ public class GluttonyEnemy : EnemyInfo
         collided = false;
         onRush = true;
         animator.SetBool("Rush", true);
+        SoundManager.Instance.PlaySound(SoundManager.Sound.GluttonyRush, 0.5f);
         while (!collided)
         {
             //move
+            
             rb.MovePosition(transform.position);
             Vector2 targetPos = new Vector2(transform.position.x + 0.1f * mult, transform.position.y);
             rb.MovePosition(targetPos);
@@ -151,7 +156,7 @@ public class GluttonyEnemy : EnemyInfo
 
         //throw the food
         GameObject food = Instantiate(foodPrefab, firingPoint.position, firingPoint.rotation);
-        SoundManager.Instance.PlaySound(SoundManager.Sound.PlayerBullet, 1f);
+        SoundManager.Instance.PlaySound(SoundManager.Sound.GluttonyAtack, 0.3f);
 
         //TODO
        // There are situations where the player can hit the boss, but the boss doens't it back
@@ -169,7 +174,8 @@ public class GluttonyEnemy : EnemyInfo
         animator.SetBool("HpRegen", true);
         gluttonySuperParticleEffect.SetActive(true);
 
-        StopCoroutine(bullRushCoroutine);
+        if(bullRushCoroutine!=null) StopCoroutine(bullRushCoroutine);
+
         rb.MovePosition(transform.position); // stop movign
         yield return new WaitForSeconds(1.5f);
 

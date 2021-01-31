@@ -8,23 +8,17 @@ public class EscMenu : MonoBehaviour
     public GameObject EscPanel;
     public GameObject BackgroundMusic;
     bool Paused = false;
-    bool cooldown = false;
 
-    void Update() {
+    void LateUpdate() {
         if (Input.GetKeyDown("escape")) {
-            cooldown = true;
             if (Paused) {
                 Time.timeScale = 1.0f;
                 EscPanel.gameObject.SetActive(false);
-                Cursor.visible = false;
-                Cursor.lockState = CursorLockMode.Locked;
                 BackgroundMusic.GetComponent<AudioSource>().Play();
                 Paused = false;
             } else {
                 Time.timeScale = 0.0f;
                 EscPanel.gameObject.SetActive(true);
-                Cursor.visible = true;
-                Cursor.lockState = CursorLockMode.None;
                 BackgroundMusic.GetComponent<AudioSource>().Pause();
                 Paused = true;
             }
@@ -32,14 +26,17 @@ public class EscMenu : MonoBehaviour
     }
 
     public void Resume() {
+        Paused = false;
         Time.timeScale = 1.0f;
         EscPanel.gameObject.SetActive(false);
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.None;
         BackgroundMusic.GetComponent<AudioSource>().Play();
     }
 
-    public void MainMenu() {
-        SceneManager.LoadSceneAsync(0);
+    public void Quit() {
+        #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+        #else
+                         Application.Quit();
+        #endif
     }
 }

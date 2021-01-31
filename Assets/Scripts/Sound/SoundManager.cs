@@ -29,14 +29,15 @@ public class SoundManager : MonoBehaviour {
         BatmacAttack,
         GluttonyHurt,
         GluttonyDead,
-        GluttonyAtack
+        GluttonyAtack,
+        GluttonyRush
     }
 
     public void PlaySound(Sound sound, float soundVolume) {
         GameObject soundgameobject = new GameObject("Sound");
         AudioSource audioSource = soundgameobject.AddComponent<AudioSource>();
         audioSource.PlayOneShot(GetAudioClip(sound), soundVolume);
-        Destroy(soundgameobject, 0.8f);
+        Destroy(soundgameobject, 0.5f);
     }
 
     private AudioClip GetAudioClip(Sound sound) {
