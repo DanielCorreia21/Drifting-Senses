@@ -125,6 +125,8 @@ public class SnakeEnemy : EnemyInfo
             character.TakeDamage(attackDamage);
             snakeAnimator.SetTrigger("Attack");
 
+            SoundManager.Instance.PlaySound(SoundManager.Sound.SnakeAttack, 1f);
+
             yield return new WaitForSeconds(attackSpeed);
             attackOnCoolDown = false;
         }
