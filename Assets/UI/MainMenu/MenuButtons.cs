@@ -29,8 +29,11 @@ public class MenuButtons : MonoBehaviour
         controlsMenu.SetActive(false);
         mainMenu.SetActive(true);
     }
-    public void ReturnMainMenu()
-    {
-        SceneManager.LoadSceneAsync(0);
+    public void ExitGame() {
+        #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+        #else
+                 Application.Quit();
+        #endif
     }
 }
