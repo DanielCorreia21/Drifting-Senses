@@ -142,12 +142,12 @@ public class BatmacEnemy : EnemyInfo
         GameObject foodDrop = null;
         if (randomFloat <= this.macDropChance)
         {
-            foodDrop = Instantiate(macPrefab, LevelManager.Instance.transform);
+            foodDrop = Instantiate(macPrefab);
         }
         else if(foodDrops != null)
         {
             int prefabChoice = Random.Range(0, this.foodDrops.Count);
-            foodDrop = Instantiate(this.foodDrops[prefabChoice], LevelManager.Instance.transform);
+            foodDrop = Instantiate(this.foodDrops[prefabChoice]);
 
         }
         Vector3 pos = transform.position;
