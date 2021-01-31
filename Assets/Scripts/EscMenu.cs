@@ -37,8 +37,4 @@ public class EscMenu : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         BackgroundMusic.GetComponent<AudioSource>().Play();
     }
-
-    public void MainMenu() {
-        LevelManager.Instance.
-    }
 }
