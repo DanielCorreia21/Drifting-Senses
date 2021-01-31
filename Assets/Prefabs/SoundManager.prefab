@@ -43,9 +43,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547918f5b505c9f4eb986bf0092c9e0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 8300000, guid: 3908a52d63561e94c86088cfd6323880, type: 3}
-  dash: {fileID: 8300000, guid: ead4762062be54f42bede27aebdd5681, type: 3}
-  medusa_dead: {fileID: 8300000, guid: e56491b25b3189b46879bfdc92e945ff, type: 3}
-  medusa_damage: {fileID: 8300000, guid: f9b26550276828a42b7d474631ff3a54, type: 3}
-  medusa_atack: {fileID: 8300000, guid: 78493dc8b8c5166459c898fc2fd061c8, type: 3}
-  playerAudio: {fileID: 0}
+  sounds:
+  - sound: 1
+    audioClip: {fileID: 8300000, guid: ead4762062be54f42bede27aebdd5681, type: 3}
+  - sound: 2
+    audioClip: {fileID: 8300000, guid: e56491b25b3189b46879bfdc92e945ff, type: 3}
+  - sound: 3
+    audioClip: {fileID: 8300000, guid: 78493dc8b8c5166459c898fc2fd061c8, type: 3}
+  - sound: 4
+    audioClip: {fileID: 8300000, guid: f9b26550276828a42b7d474631ff3a54, type: 3}
+  - sound: 5
+    audioClip: {fileID: 8300000, guid: 5786a6f76c0782f47aa434d4e43ce0f9, type: 3}
+  - sound: 6
+    audioClip: {fileID: 8300000, guid: a81a117fa17bd96409dbdee1ecd6a34d, type: 3}
+  - sound: 0
+    audioClip: {fileID: 8300000, guid: 3908a52d63561e94c86088cfd6323880, type: 3}
