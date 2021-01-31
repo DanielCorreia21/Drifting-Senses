@@ -101,7 +101,6 @@ public class BatmacEnemy : EnemyInfo
             CharacterInfo character = target.gameObject.GetComponent<CharacterInfo>();
 
             character.TakeDamage(attackDamage);
-            batmacAnimator.SetTrigger("Attack");
 
             yield return new WaitForSeconds(attackSpeed);
             attackOnCoolDown = false;
