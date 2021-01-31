@@ -30,13 +30,19 @@ public class CharacterInfo : MonoBehaviour
         health -= damage;
         UpdateHealthBar();
 
+        SoundManager.Instance.PlaySound(SoundManager.Sound.PlayerHurt, 1f);
+
         if(health <= 0)
         {
-            StartCoroutine(LevelManager.Instance.ResetScene());
+            SoundManager.Instance.PlaySound(SoundManager.Sound.PlayerDead, 1f);
+            StartCoroutine(WaitForSound(0.35f));
         }
-        //TODO death
     }
 
+    private IEnumerator WaitForSound(float seconds) {
+        yield return new WaitForSeconds(seconds);
+        StartCoroutine(LevelManager.Instance.ResetScene());
+    }
     private void RegenRepeatingHealth()
     {
         RegenHealth(this.regenRate);

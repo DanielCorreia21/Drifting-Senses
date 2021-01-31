@@ -20,6 +20,8 @@ public class SoundManager : MonoBehaviour {
     public enum Sound {
         PlayerBullet,
         PlayerDash,
+        PlayerHurt,
+        PlayerDead,
         MedusaDead,
         MedusaLaser,
         MedusaHurt,
