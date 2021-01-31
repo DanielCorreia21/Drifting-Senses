@@ -62,6 +62,7 @@ public class GluttonyEnemy : EnemyInfo
 
         if(health <= 0.001)
         {
+            StopAllCoroutines();
             StartCoroutine(Die());
         }
     }
@@ -69,12 +70,13 @@ public class GluttonyEnemy : EnemyInfo
     IEnumerator Die()
     {
         SoundManager.Instance.PlaySound(SoundManager.Sound.GluttonyDead, 1f);
-        StopAllCoroutines();
+        Debug.Log("End Scen1e");
         rb.MovePosition(transform.position); // stop movign
 
 
         transform.GetComponent<Animator>().SetTrigger("Die");
         yield return new WaitForSeconds(1f);
+        Debug.Log("End Scene");
         LevelManager.Instance.EndLevel();
         Destroy(gameObject);
     }
@@ -84,7 +86,10 @@ public class GluttonyEnemy : EnemyInfo
         SoundManager.Instance.PlaySound(SoundManager.Sound.GluttonyHurt, 0.2f);
         float percentage = this.health / this.maxHealth;
         percentage = percentage < 0 ? 0 : percentage;
-        _healthBar.UpdateHealthBar(percentage);
+        if(_healthBar != null)
+        {
+            _healthBar.UpdateHealthBar(percentage);
+        }
     }
 
     private bool onRush = false;
