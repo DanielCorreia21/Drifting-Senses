@@ -26207,7 +26207,7 @@ MonoBehaviour:
   regenRate: 0.05
   healthBarPrefab: {fileID: 1125420324193323618, guid: 8c709b01edd45de42ac52a12d5f6d923,
     type: 3}
-  regenActive: 1
+  regenActive: 0
 --- !u!1 &5220163770530519878
 GameObject:
   m_ObjectHideFlags: 0
