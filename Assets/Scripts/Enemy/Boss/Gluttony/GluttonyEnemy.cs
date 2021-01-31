@@ -165,7 +165,8 @@ public class GluttonyEnemy : EnemyInfo
     }
 
     private bool onRush = false;
-    private bool collided = false;
+ 
+    public bool collided = false;
 
     internal void TriggerBullRush(Animator animator)
     {
@@ -176,16 +177,48 @@ public class GluttonyEnemy : EnemyInfo
             mult = -1;
         }
 
-        Vector2 targetPos = new Vector2(_player.position.x, transform.position.y);
+        StartCoroutine(BullRush(mult,animator));
 
-        Vector2 newPos = Vector2.MoveTowards(rb.position, targetPos, speed * Time.fixedDeltaTime);
-        rb.MovePosition(newPos);
+    }
+
+
+    public void SetCollided()
+    {
+        if (onRush && !collided)
+        {
+            collided = true;
+        }
+    }
+
+    private IEnumerator BullRush(int mult, Animator animator)
+    {
+        collided = false;
+        onRush = true;
+        animator.SetBool("Rush", true);
+        while (!collided)
+        {
+            //move
+            rb.MovePosition(transform.position);
+            Vector2 targetPos = new Vector2(transform.position.x + 0.1f * mult, transform.position.y);
+            rb.MovePosition(targetPos);
+            yield return null;
+        }
+        onRush = false;
+        collided = false;
+        rb.MovePosition(transform.position);
+        animator.SetBool("Rush", false);
 
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
+        if (collision.transform.CompareTag("Character"))
+        {
+            CharacterInfo playerInfo = _player.GetComponent<CharacterInfo>();
+            playerInfo.TakeDamage(25f);
+            SetCollided();
+            
+        }
     }
 
     internal void TriggerFoodThrow(Animator animator)
