@@ -17,8 +17,6 @@ public class SnakeEnemy : EnemyInfo
     public Animator snakeAnimator;
 
     [HideInInspector]
-    public bool hasTarget = false;  // do I have a target to move towards
-    [HideInInspector]
     public GameObject target;   // the target i want to get closer to 
     [SerializeField] private Transform m_GroundCheck;
     const float k_GroundedRadius = .02f; // Radius of the overlap circle to determine if grounded
