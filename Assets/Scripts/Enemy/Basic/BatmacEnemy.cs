@@ -11,6 +11,9 @@ public class BatmacEnemy : EnemyInfo
     public float attackDamage = 10;
     public float attackSpeed = 0.5f;
     public float health = 20f;
+    public float macDropChance = 0.05f;
+    public List<GameObject> foodDrops;
+    public GameObject macPrefab;
 
     private bool attackOnCoolDown = false;
 
@@ -124,9 +127,29 @@ public class BatmacEnemy : EnemyInfo
 
     private IEnumerator Die()
     {
+
         dead = true;
         batmacAnimator.SetTrigger("Die");
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(0.3f);
+        DropFood();
         GameObject.Destroy(gameObject);
+    }
+
+    private void DropFood()
+    {
+        float randomFloat = Random.Range(0.0f, 1.0f);
+        GameObject foodDrop = null;
+        if (randomFloat <= this.macDropChance)
+        {
+            foodDrop = Instantiate(macPrefab, LevelManager.Instance.transform);
+        }
+        else if(foodDrops != null)
+        {
+            int prefabChoice = Random.Range(0, this.foodDrops.Count);
+            foodDrop = Instantiate(this.foodDrops[prefabChoice], LevelManager.Instance.transform);
+
+        }
+        Vector3 pos = transform.position;
+        foodDrop.transform.position = new Vector3(pos.x, pos.y + 2, pos.z);
     }
 }

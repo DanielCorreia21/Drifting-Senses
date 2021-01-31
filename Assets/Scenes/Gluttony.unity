@@ -25541,7 +25541,7 @@ PrefabInstance:
     - target: {fileID: 2800125125403092415, guid: 2afe3fa86fbf8e041af18036e17087c3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.3539999
+      value: 3.3760002
       objectReference: {fileID: 0}
     - target: {fileID: 2800125125403092415, guid: 2afe3fa86fbf8e041af18036e17087c3,
         type: 3}
@@ -25668,7 +25668,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 609174023}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.82, y: 3.3539999, z: -10}
+  m_LocalPosition: {x: -6.82, y: 3.3760002, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -25776,9 +25776,9 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 230951239
+  m_SortingLayer: -1
+  m_SortingOrder: 1
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -27242,7 +27242,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4155521538989282866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.82, y: 4.054, z: 0}
+  m_LocalPosition: {x: -6.82, y: 4.076, z: 0}
   m_LocalScale: {x: 1.8, y: 1.8, z: 1}
   m_Children:
   - {fileID: 4155521538768826274}

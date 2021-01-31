@@ -70,7 +70,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: -5696374196674966115, guid: 58a58027d4f92f045b27fcbacd44c673,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -201,6 +201,17 @@ MonoBehaviour:
   attackDamage: 7
   attackSpeed: 0.5
   health: 20
+  macDropChance: 0.05
+  foodDrops:
+  - {fileID: 459969357102925042, guid: 0d73c901facd66b4b9759a97912b3199, type: 3}
+  - {fileID: 8270245693586726256, guid: c04ac32b6ace4e740929d3b42b5a16f6, type: 3}
+  - {fileID: 2202867821826595219, guid: a26cb6ccf18b13a47bee6a91863354ee, type: 3}
+  - {fileID: 2293046570339843180, guid: a8534a4d6186a3e4c86c376a535b40fb, type: 3}
+  - {fileID: 3540285964320448978, guid: 3c312a142fd16d84c9bfee02d3ccaedc, type: 3}
+  - {fileID: 80129609717698347, guid: f0718653b302c5743a8cd17bfbf963f3, type: 3}
+  - {fileID: 885524277735753714, guid: c6f7d8dfa1ce3884ba8cec19dcfb5fad, type: 3}
+  macPrefab: {fileID: 459969357102925042, guid: 50ad014a83d9e464e8ad9ee1f9a8bb47,
+    type: 3}
   batmacAnimator: {fileID: 9185319508498308616}
   hasTarget: 0
   target: {fileID: 0}
