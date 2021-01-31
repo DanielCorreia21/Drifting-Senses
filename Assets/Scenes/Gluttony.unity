@@ -22434,7 +22434,7 @@ PrefabInstance:
     - target: {fileID: 2800125125403092415, guid: 2afe3fa86fbf8e041af18036e17087c3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.33
+      value: 8.7
       objectReference: {fileID: 0}
     - target: {fileID: 2800125125403092415, guid: 2afe3fa86fbf8e041af18036e17087c3,
         type: 3}
@@ -22728,7 +22728,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 609174023}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 110.18, y: 8.33, z: -10}
+  m_LocalPosition: {x: 110.18, y: 8.7, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -25821,6 +25821,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5529621569207924277, guid: 96790454ae5cce84597c0ab2b1af6a7f,
+        type: 3}
+      propertyPath: gluttonySuperParticleEffect
+      value: 
+      objectReference: {fileID: 2339316419817911412}
     - target: {fileID: 5529621569207924278, guid: 96790454ae5cce84597c0ab2b1af6a7f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25883,6 +25888,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96790454ae5cce84597c0ab2b1af6a7f, type: 3}
+--- !u!1 &2339316419817911412 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5529621569311776289, guid: 96790454ae5cce84597c0ab2b1af6a7f,
+    type: 3}
+  m_PrefabInstance: {fileID: 2339316419817911411}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3262306149056334254
 Transform:
   m_ObjectHideFlags: 0
@@ -25891,7 +25902,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4155521538989282866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 110.18, y: 9.03, z: 0}
+  m_LocalPosition: {x: 110.18, y: 9.4, z: 0}
   m_LocalScale: {x: 1.8, y: 1.8, z: 1}
   m_Children:
   - {fileID: 4155521538768826274}
@@ -26237,7 +26248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7dfcfe3beb87a2c4c8877c05648bb8bd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lowestY: -12
+  lowestY: -1
   fadeText: {fileID: 0}
 --- !u!4 &5220163770530519928
 Transform:

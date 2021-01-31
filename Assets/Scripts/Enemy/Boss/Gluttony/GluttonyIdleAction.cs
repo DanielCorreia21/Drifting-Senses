@@ -7,6 +7,7 @@ public class GluttonyIdleAction : StateMachineBehaviour
     public float range = 10f;
     public float delayForAttack = 2f;
     public float timeSinceLastAttck = 0f;
+    public float timeSinceLastSuper = 0f;
 
     private Transform _player;
     private Rigidbody2D rb;
@@ -36,6 +37,15 @@ public class GluttonyIdleAction : StateMachineBehaviour
         else
         {
             rb.transform.rotation = Quaternion.Euler(new Vector3(0f, 180f, 0f));
+        }
+
+        //Do a super every 20 seconds
+        if (Time.realtimeSinceStartup - this.timeSinceLastSuper >= 20f)
+        {
+            GluttonyEnemy enemyController = animator.GetComponent<GluttonyEnemy>();
+            enemyController.TriggerHpRegen(animator);
+            timeSinceLastSuper = Time.realtimeSinceStartup;
+            return;
         }
 
         //Do not try to attack if you just entered idle
