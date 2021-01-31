@@ -13,6 +13,7 @@ public class GluttonyEnemy : EnemyInfo
     public GameObject gluttonySuperParticleEffect;
     public GameObject foodPrefab;
     public float speed = 2f;
+    public float bullRushRange = 3;
     private Stack<float> _superPercentages;
 
     private Transform _canvas;
@@ -172,7 +173,7 @@ public class GluttonyEnemy : EnemyInfo
         rb.MovePosition(transform.position); // stop movign
         yield return new WaitForSeconds(1.5f);
 
-        health += 200;
+        health += 400;
         if (health >= maxHealth)
         {
             health = maxHealth;
@@ -185,5 +186,10 @@ public class GluttonyEnemy : EnemyInfo
         gluttonySuperParticleEffect.SetActive(false);
         animator.SetBool("HpRegen", false);
 
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(transform.position,bullRushRange);
     }
 }

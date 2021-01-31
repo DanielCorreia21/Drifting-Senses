@@ -39,12 +39,12 @@ public class GluttonyIdleAction : StateMachineBehaviour
             rb.transform.rotation = Quaternion.Euler(new Vector3(0f, 180f, 0f));
         }
 
+        GluttonyEnemy enemyController = animator.GetComponent<GluttonyEnemy>();
         //Do a super every 20 seconds
         if (Time.realtimeSinceStartup - this.timeSinceLastSuper >= 20f)
         {
             if (Vector3.Distance(_player.position, rb.position) <= range)
             {
-                GluttonyEnemy enemyController = animator.GetComponent<GluttonyEnemy>();
                 enemyController.TriggerHpRegen(animator);
                 timeSinceLastSuper = Time.realtimeSinceStartup;
             }
@@ -56,9 +56,8 @@ public class GluttonyIdleAction : StateMachineBehaviour
 
         if (Vector3.Distance(_player.position,rb.position) <= range)
         {
-            GluttonyEnemy enemyController = animator.GetComponent<GluttonyEnemy>();
 
-            if (rb.position.y - _player.position.y  < -0.3f)
+            if (rb.position.y - _player.position.y  < -0.3f && Vector3.Distance(_player.position, rb.position) <= enemyController.bullRushRange)
             {
                 animator.SetTrigger("Attack");
                 
