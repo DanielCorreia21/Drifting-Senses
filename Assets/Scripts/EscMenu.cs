@@ -39,7 +39,11 @@ public class EscMenu : MonoBehaviour
         BackgroundMusic.GetComponent<AudioSource>().Play();
     }
 
-    public void MainMenu() {
-        SceneManager.LoadSceneAsync(0);
+    public void Quit() {
+        #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+        #else
+                         Application.Quit();
+        #endif
     }
 }
