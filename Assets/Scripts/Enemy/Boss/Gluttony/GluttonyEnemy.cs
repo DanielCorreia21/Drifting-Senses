@@ -233,6 +233,10 @@ public class GluttonyEnemy : EnemyInfo
         //throw the food
         GameObject food = Instantiate(foodPrefab, firingPoint.position, firingPoint.rotation);
         SoundManager.Instance.PlaySound(SoundManager.Sound.PlayerBullet, 1f);
+
+        //TODO
+       // There are situations where the player can hit the boss, but the boss doens't it back
+
         yield return null;
     }
 }

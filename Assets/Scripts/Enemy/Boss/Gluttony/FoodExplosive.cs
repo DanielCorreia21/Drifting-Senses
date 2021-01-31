@@ -10,13 +10,16 @@ public class FoodExplosive : MonoBehaviour
 
     void Start()
     {
-        rb.velocity = transform.right * speed;
+        GameObject playerOj = GameObject.FindGameObjectWithTag("Character");
+        rb.velocity = (playerOj.transform.position - transform.position) * speed;
         StartCoroutine(DestroyAfterTime());
     }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         //when we destroy, we make an explosion
+        //We show explosion on screeen, and do a sphereCast to see if player is inside
+        //Or check distance between this and the player, and check if less than blast radius
         Destroy(gameObject);
 
 
