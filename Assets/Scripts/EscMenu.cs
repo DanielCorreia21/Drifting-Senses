@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EscMenu : MonoBehaviour
 {
@@ -36,5 +37,9 @@ public class EscMenu : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.None;
         BackgroundMusic.GetComponent<AudioSource>().Play();
+    }
+
+    public void MainMenu() {
+        SceneManager.LoadSceneAsync(0);
     }
 }
