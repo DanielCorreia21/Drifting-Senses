@@ -29,4 +29,8 @@ public class MenuButtons : MonoBehaviour
         controlsMenu.SetActive(false);
         mainMenu.SetActive(true);
     }
+    public void ReturnMainMenu()
+    {
+        SceneManager.LoadSceneAsync(0);
+    }
 }
