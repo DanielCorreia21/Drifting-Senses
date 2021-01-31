@@ -47,18 +47,7 @@ public class GluttonyIdleAction : StateMachineBehaviour
 
             if (rb.position.y - _player.position.y  < -0.3f)
             {
-                //The player is above me. I want to throw food at him!
-                RaycastHit2D hit = Physics2D.Raycast(rb.position, (_player.position - new Vector3(rb.position.x, rb.position.y, 0f)), range, layerMask);
-                if (hit.collider != null)
-                {
-                    CharacterInfo characterInfo = hit.collider.GetComponent<CharacterInfo>();
-                    if (characterInfo != null && hit.distance < range)
-                    {
-                     
-                        enemyController.TriggerFoodThrow(animator);
-                        timeSinceLastAttck = Time.realtimeSinceStartup;
-                    }
-                }
+                animator.SetTrigger("Attack");
                 
             } else
             {

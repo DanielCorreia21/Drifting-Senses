@@ -25473,6 +25473,36 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &930867552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 930867553}
+  m_Layer: 0
+  m_Name: FiringPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &930867553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930867552}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.237, y: -0.075, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 7839573322437608005}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1470669623
 GameObject:
   m_ObjectHideFlags: 0
@@ -31364,10 +31394,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7839573322437608010}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 115.49, y: 6.74, z: 0}
+  m_LocalPosition: {x: 114.24, y: 6.74, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7839573322283526733}
+  - {fileID: 930867553}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -31385,9 +31416,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 100
   isBoss: 1
-  firingPoint: {fileID: 0}
+  firingPoint: {fileID: 930867553}
   rb: {fileID: 7839573322437608007}
-  medusaSuperParticleEffect: {fileID: 0}
+  gluttonySuperParticleEffect: {fileID: 0}
+  foodPrefab: {fileID: 7540180660063146041, guid: 16acef30dcd84db489060dcc782c15f8,
+    type: 3}
   speed: 1
   laser: {fileID: 0}
   healthBarPrefab: {fileID: 6366670967511187773, guid: 741cef5c52980a64684f17a6531c6239,

@@ -9,7 +9,8 @@ public class GluttonyEnemy : EnemyInfo
     public bool isBoss = false;
     public Transform firingPoint;
     public Rigidbody2D rb;
-    public GameObject medusaSuperParticleEffect;
+    public GameObject gluttonySuperParticleEffect;
+    public GameObject foodPrefab;
     public float speed = 2f;
     private Stack<float> _superPercentages;
 
@@ -93,10 +94,10 @@ public class GluttonyEnemy : EnemyInfo
     IEnumerator GluttonySuperAttack()
     {
 
-        medusaSuperParticleEffect.SetActive(true);
+        gluttonySuperParticleEffect.SetActive(true);
         Debug.Log("Enabling particle effect");
         yield return new WaitForSeconds(1.08f);
-        medusaSuperParticleEffect.SetActive(false);
+        gluttonySuperParticleEffect.SetActive(false);
 
         Coroutine movedCor = StartCoroutine(CheckPlayerMoved(_player.position));
 
@@ -221,8 +222,17 @@ public class GluttonyEnemy : EnemyInfo
         }
     }
 
-    internal void TriggerFoodThrow(Animator animator)
+    internal void TriggerFoodThrow()
+    {
+        StartCoroutine(FoodThrow());
+    }
+
+    private IEnumerator FoodThrow()
     {
 
+        //throw the food
+        GameObject food = Instantiate(foodPrefab, firingPoint.position, firingPoint.rotation);
+        SoundManager.Instance.PlaySound(SoundManager.Sound.PlayerBullet, 1f);
+        yield return null;
     }
 }
