@@ -26,7 +26,10 @@ public class SoundManager : MonoBehaviour {
         MedusaLaser,
         MedusaHurt,
         SnakeAttack,
-        BatmacAttack
+        BatmacAttack,
+        GluttonyHurt,
+        GluttonyDead,
+        GluttonyAtack
     }
 
     public void PlaySound(Sound sound, float soundVolume) {
