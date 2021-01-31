@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class GluttonyEnemy : EnemyInfo
@@ -43,7 +44,9 @@ public class GluttonyEnemy : EnemyInfo
     {
         if(_healthBar == null && Vector3.Distance(_player.position, transform.position) < 5f)
         {
-            _healthBar = Instantiate(healthBarPrefab, _canvas).GetComponent<HealthBarController>();
+            GameObject healthBarObject = Instantiate(healthBarPrefab, _canvas);
+            _healthBar = healthBarObject.GetComponent<HealthBarController>();
+            healthBarObject.transform.Find("BossName").GetComponent<TextMeshProUGUI>().text = "Gluttony";
         }
     }
 
