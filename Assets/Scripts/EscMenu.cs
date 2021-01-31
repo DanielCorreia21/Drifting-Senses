@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EscMenu : MonoBehaviour
 {
@@ -39,6 +40,6 @@ public class EscMenu : MonoBehaviour
     }
 
     public void MainMenu() {
-        LevelManager.Instance.
+        SceneManager.LoadSceneAsync(0);
     }
 }
