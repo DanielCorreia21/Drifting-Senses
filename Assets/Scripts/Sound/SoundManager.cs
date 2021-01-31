@@ -20,9 +20,13 @@ public class SoundManager : MonoBehaviour {
     public enum Sound {
         PlayerBullet,
         PlayerDash,
+        PlayerHurt,
+        PlayerDead,
         MedusaDead,
         MedusaLaser,
-        MedusaHurt
+        MedusaHurt,
+        SnakeAttack,
+        BatmacAttack
     }
 
     public void PlaySound(Sound sound, float soundVolume) {
