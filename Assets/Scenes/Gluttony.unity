@@ -27312,7 +27312,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1470669623}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 60.78635, y: 7.4607573, z: 0}
+  m_LocalPosition: {x: 60.78635, y: 4.9, z: 0}
   m_LocalScale: {x: 2.2893295, y: 2.2893295, z: 2.2893295}
   m_Children: []
   m_Father: {fileID: 0}
@@ -30391,8 +30391,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   background: {fileID: 7807659742635200645}
   textMeshPro: {fileID: 7807659742766429373}
-  startText: Solitude
-  endText: You are not alone
+  startText: Hunger
+  endText: You are not yourself when you're hungry
   Busy: 0
 --- !u!1 &7807659742156237370
 GameObject:
